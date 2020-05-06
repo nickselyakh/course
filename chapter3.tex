@@ -16,4 +16,303 @@
 и их решения. 
 
 \section{Явный MPC}
+
+$$
+    \begin{aligned}
+        & x^{+} = Ax + Bu, \\
+        & C_{x}x \le dx, \\
+        &  C_{u}u \le du \\
+     \end{aligned}
+$$
+$$ 
+\begin{aligned}
+        & \min_{u(\cdot | t)} \sum_{t}^{t+N-1} L(x(k(t), u(k(t))) + F(x(t+N)t)), \\ 
+        & x(k+1 | t) = Ax(k\ |\ t) + Bu(k\ |\ t), \\
+        & x(t\ |\ t) = x(t), \\
+        & C_{x}x(k\ |\ t) \le dx, \ t \le k \le t+N-1, \\
+        & C_{u}u(k\ |\ t) \le du, \ C_{x}x(t+N\ |\ t) = d_f. \\
+        & L(x, u) = x^TQx + u^TRu, \\
+        & F(x) = x^TQx + u^TRu,\ Q,R > 0 \\
+        & u^{*}(\cdot \ | \ t) \Rightarrow x := [x^T(t+1 \ |\ t), x^T(t+N \ |\ t)]^T \\
+        & u := [u^T(t \ |\ t), u^T(t+N-1 \ |\ t)]^T \\
+    \end{aligned}
+$$
+\begin{equation} \label{ch4-1}
+    J(x(t), u(\cdot \ | \ t)) = x^T(t\ |\ Qx(t) + x^T\tilde{Q}x + u^T\tilde{R}u)
+\end{equation}
+$$x(t+k \ |\ t) = A^kx(t) + \sum_{j=0}^{k-1}A^jBu(t+k-j-1 \ |\ t)$$
+\begin{equation} \label{ch4-2}
+    x = \begin{bmatrix}
+        A\\
+        A^2\\
+        \vdots\\
+        A^N
+    \end{bmatrix} x(t) + \begin{bmatrix}
+        B & 0 & \vdots & 0 \\
+        AB & B & \vdots & 0 \\
+        \cdots & \cdots & \vdots & \cdots &\\
+        A^{N-1}B & A^{N-1}B & \vdots & B \\
+        
+    \end{bmatrix}u
+\end{equation}
+
+$$
+\begin{bmatrix}
+A\\
+A^2\\
+\vdots\\
+A^N
+\end{bmatrix} \Rightarrow \Omega, \ \begin{bmatrix}
+    B & 0 & \vdots & 0 \\
+    AB & B & \vdots & 0 \\
+    \cdots & \cdots & \vdots & \cdots &\\
+    A^{N-1}B & A^{N-1}B & \vdots & B \\
+    
+\end{bmatrix} \Rightarrow \Gamma
+$$
+
+$$
+    J(x(t), u) = 1/2 x^T(t)Yx(t) + 1/2 u^THu + x^T(t)FU_x.
+$$
+
+$$
+    Y = 2(Q + \Omega^T \tilde{Q}\Omega)
+$$
+$$
+    H = 2(\tilde{R} + \Gamma^T\tilde{Q}\Gamma)
+$$
+$$
+    F = 2\Omega^T\tilde{Q}\Gamma
+$$
+$$
+    \begin{bmatrix}
+        cx & \ & \ \\
+        \ & \ddots & \ \\
+        \ & \ & cx
+    \end{bmatrix} (\Omega x(t) + \Gamma u) \le \begin{bmatrix}
+        dx \\
+        \vdots \\
+        dx
+    \end{bmatrix}^T
+$$
+
+Аналагично для $u$ и $x(t + N)$
+
+$$Gu \le w+ Ex(t)$$
+$$\min_{u} \frac{1}{2} u^THu + x^TFu = \frac{1}{2}x^TYx$$
+$$Gu \le w + Ex$$
+$$z := u + H^{-1}F^Tx$$
+$$\overline{Y} = Y - FH^{-1}F^T$$
+$$\Rightarrow \min_z \frac{1}{2}Z^THz + \frac{1}{2}x^T\tilde{Y}x$$
+$$Gz \le w + sx, \ S = E + GH^{-1}А,Е$$
+\begin{equation} \label{ch4-a}
+    Hz + G^T \lambda = 0
+\end{equation}
+\begin{equation} \label{ch4-b}
+\lambda_{i}(G_iz - w_i - s_ix) = 0, \ i = \overline{1, q}
+\end{equation}
+\begin{equation} \label{ch4-c}
+\lambda_{i} \ge 0
+\end{equation}
+\begin{equation} \label{ch4-d}
+Gz \le w + sx
+\end{equation}
+$$
+    z^{*}(x) = \dots
+$$
+
+$
+    A(x) = {i = {1, \dots, q}, G_iz^0(x) = w_i + s_ix}
+$
+--- оптимальное активное множество \\
+$G^A, W^A, S^A$ --- сроки содержащие элементы активного множества \\
+
+\begin{equation} \label{ch4-5}
+    z^{*}(x) = -W^{-1}G^T\lambda = -W^{-1}(G^A)^T\lambda^A
+\end{equation}
+
+Для всех активных компонент выполняется равенство:
+\begin{equation} \label{ch4-6}
+    \begin{aligned}
+        & G^Az^{*} (x) = w(A) + s^Ax, \\
+        & -G^AH^{-1}(G^A)^T\lambda^A = w^A + s^Ax, \\
+        & \lambda^A = -(G^AH^{-1}(G^A)^T)^{-1}(W^A+s^Ax).
+    \end{aligned}
+\end{equation}
+
+\begin{equation}\label{ch4-7}
+    \text{\ref{ch4-5}, \ref{ch4-6}}
+    \Rightarrow z^{*}(x) = H^{-1}(G^A)^T(G^AW^{-1}(G^A)^T)(W^A+s^Ax)
+\end{equation}
+\ref{ch4-7} $\Rightarrow$ \ref{ch4-d}
+\begin{equation}\label{ch4-8}
+    GH^{-1}(G^A)^T(G^AH^{-1}(G^A)^T)^{-1}(W^A + s^Ax) \le w + sx
+\end{equation}
+\ref{ch4-8} $\Rightarrow$ \ref{ch4-c}
+\begin{equation}\label{ch4-9}
+    -(G^AH^{-1}(G^A)^T)^{-1}(W^A + s^Ax) \ge 0
+\end{equation}
+
+Алгоритм: 
+\begin{enumerate}
+    \item $x_0 \in X$ (например $x_0 = 0$)
+    \item Решить задачу при $x = x_0 \Rightarrow z^{*}(x_0)$ \label{ch4-item}
+    \item Определить активные ограничения $\Rightarrow G^A, W^A, s^A$
+    \item Найти из \ref{ch4-8}, \ref{ch4-9} $CR^A$ --- критическая область 
+    \item Перейти через границу $CR^A$, взять новое $x_0$ и $\rightarrow$ \ref{ch4-item}
+\end{enumerate}
+
+\begin{theorem}\label{ch4-th1}
+    Пусть у нас имеется линейная система, линейные ограничения, функция стоимости квадратичная. Тогда полученный регулятор $u_{MPC}(x)$ является непрерывным и кусочно-линейным.
+    Функция, предствляющая собой оптимальную стоимость $J^{*}(x)$ также является непрерывной выпуклой и кусочно-квадратичной
+\end{theorem}
+
 \section{Синтез оптимальной системы}
+\subsection{Успокоение материальной точки}
+    $$ 
+    \begin{cases}
+    & x_f \to \min, \\
+    & \dot{x} = Ax + Bu, \ x(0) = x_{0},\ x(t_f) = x_f, \\
+    & \|u\|_{\infty} \le 1, \ t \in T = [0,\ t_f]. \\
+    \end{cases}
+    $$
+
+Управление принимает лишь значения $\pm1$. Задача синтеза будет решена, если в пространстве $\mathbb{R}^n$ мы укажем области $s_{-}$ и $s_{+}$ такие что, когда \\
+$x \in s_{-} \Rightarrow u(t) = -1$ \\
+$x \in s_{+} \Rightarrow u(t) = 1$ \\
+$s_{-} \cup s_{+} = \mathbb{R}^n$\\
+Границы этих областей --- поверхности переключения. Рассмотрим задачу о наискорейшем успокоении с помощью граничных управлений материальной точки единичной массы движущейся по прямой из заданного начального положения $x(0) = x_{01}$ с заданной начальной скоростью $\dot{x}(0) = x_{02}$. Под наискорейшим успокоением понимается перевод в начало координат и остановка за минимальное время $t_f$.\\
+$x(t_f) = 0$
+$\dot{x}(t_f) = 0$ \\
+$$
+t_f \to \min \\
+$$
+$$
+\begin{cases}
+    \dot{x}_{1} = x_{1}\\
+    \dot{x}_{2} = u
+\end{cases}
+$$
+$$
+x_{1}(0) = x_{01} \ \ \ x_{1}(t_f) = 0 \ \ \ x = x_{1}
+$$
+$$
+x_{2}(0) = x_{02} \ \ \ x_{2}(t_f) = 0 \ \ \ \dot{x} = x_{2}
+$$
+$$|u(t)| \le 1, \ t \in [0,\ t_f]$$
+$$A = \begin{pmatrix}
+    0 & 1\\
+    0 & 0
+\end{pmatrix} - b = \begin{pmatrix}
+    0\\
+    1\\
+\end{pmatrix}$$
+$$x \in R^2, \ \dot{x} = Ax + Bu$$
+$$H(x, \psi, u) = \psi^{'}(Ax + Bu) = \psi_{1}x_{2} +  \psi_{2}u$$
+$$
+\begin{cases}
+    \dot{\psi_{1}} = 0\\
+    \dot{\psi_{2}} = -\psi_{1}
+\end{cases}
+$$
+$$
+\psi_{1}(t) = C_{1},\ \psi_{2}(t) = -C_{1}t + C_{2}, \ u(t) = sign(\psi_{2}(t)), \ t \ge 0
+$$
+
+$\psi_{2}(t)$ линейна $\Rightarrow$ меняет знак не более одного раза \\
+
+\begin{enumerate}
+    \item
+        $$
+        u = 1 \Rightarrow \begin{cases}
+            \dot{x_{1}} = x_{2}\\
+            \dot{x_{2}} = 1\\
+        \end{cases}
+        $$\\
+        $$
+        x_{2} = t + C_{1}
+        $$
+        $$
+        x_{1} = t^{2}/2 + C_{1}t + C_{2}
+        $$
+        $$
+        t = x_{2} - C_{1}
+        $$
+        $$
+        x_{1} = x_{2}^{2}/2 + \overline{C}
+        $$
+        
+    \item $$
+    u = -1 \Rightarrow \begin{cases}
+        \dot{x_{1}} = x_{2}\\
+        \dot{x_{2}} = -1\\
+    \end{cases}\\
+    $$
+    $$
+    x_{2} = -t + C_{1}
+    $$
+    $$
+    x_{1} = -t^{2}/2 + C_{1}t + C_{2}
+    $$
+\end{enumerate}
+
+\section{Динамическое программирование}
+Постановка задачи: пусть имеется некоторый объект, изменяющий свое состояние в дискретные моменты времени.
+В каждый момент времени $t = \overline{0,\ N}$ поведение объекта полностью описывается $n$-вектором \\$x(t) = (x_{1}(t),\ \dots,\ x_n(t))$\\
+Динамика объекта описывается следующим рекурентным уравнением: \\$x(t+1) = f(x(t),\ u(t),\ t),\ x(0) = x_0,\ t = \overline{0,\ N-1}$\\
+$u(t) = (u_1(t), \ \dots,\ u_r(t))$ --- управляющее воздействие в момент времени $t$, $u(t) \in U(t) \in \mathbb{R}^r$, $f(\cdot)$ --- вектор функция определенная в области значений своих аргументов, $x_0$ --- начальное состояние объекта управления.\\
+При заданном состоянии $x_0$ поведение объекта полнсотью определяется управляющим воздействием $u(t)$. Качество управления оценим следующим критерием качества (типа Больца)
+\begin{equation}\label{ch4-dimanic-1}
+    \begin{cases}
+        J(u) = \phi(x(N)) + \sum_{t = 0}^{N-1}f_0(x(t),u(t),t) \to \min \\
+        \phi(x),\ f_0(x,\ u,\ t) \text{\ --- функция определенная в области значений своих аргументов}\\
+        x(t+1) = f(x(t),\ u(t),\ t),\ x(0) = x_0, \ t = \overline{0, N-1},\ u(t) \in U(t)
+    \end{cases}
+\end{equation}
+3 этапа:
+\begin{enumerate}
+    \item Инвариантное погружение, построение функции Беллмана. Исходная задача погружается в некое семейство зависящее от параметров
+    \item Составление управления Беллмана
+    \item Решение уравнения Беллмана и всей задачи в целом
+\end{enumerate}
+Любая задача характеризуется набором своих параметров, таких как число переменных, момента начала и конца процесса. При инвариантном погружении отвлекаются от заданного значения некоторых параметров и считают их переменными велечинами.\\
+Для нашей задачи \ref{ch4-dimanic-1} в качестве таких параметров выберем:
+\begin{enumerate}
+    \item Момент начала управления вместо $t = 0$ возьмем $\tau = \overline{0,N-1}$
+    \item Начальное состояние процесса вместо $x_0$ состояние $z \in \mathbb{R}^n$ в момент времени $\tau$
+\end{enumerate}
+Таким образом семейство, в которое погружается задача \ref{ch4-dimanic-1} будет иметь следующий вид:
+\begin{equation} \label{ch4-sem}
+    \begin{cases}
+        J(u(\tau,z)) = \phi(x(N)) + \sum_{t = \tau}^{N-1} f_0(x(t),\ u(t),\ t) \to \min \\
+        x(t+1) =  f(x(t), u(t), t),\ x(\tau) = z \\
+        u(t) \in U(t), \ t = \overline{\tau, N-1}
+    \end{cases}
+\end{equation}
+\ref{ch4-dimanic-1}, $\tau = 0,\ z=x_0$ --- исходня задача.\\
+Пара $(\tau,z)$ --- позиция многошагового процесса. Минимальное значение критерия качества в задачах \ref{ch4-sem}, как функция позиции $(\tau, z)$\\
+$$B(\tau, z) = \min_u J(u(\tau,\ z)) \text{\ --- функция Беллмана}$$
+
+\subsection{Динамическое программирование для задачи ОУ в классе кусочно-непрерывных управлений}
+\begin{equation}\label{dyn-1}
+    \begin{cases}
+        J(u) = \phi(x(t_f)) + \int_{t_0}^{t_f}f_0(x(t),u(t),t)dt \to \min \\
+        \dot{x} = f(x,\ u,\ t),\ x(t_0) = x_0 \\
+        u(t) \in U, \ t \in T = [t_0, \ t_f]
+    \end{cases}
+\end{equation}
+$u(t)$ --- кусочно-непрерывная функция\\
+Погрузим задачу \ref{dyn-1} в следующее семейство задач:
+\begin{equation}\label{dyn-2}
+    \begin{cases}
+        J(u(\tau,\ z)) = \phi(x(t_f)) + \int_{\tau}^{t_f}f_0(x(t),u(t),t)dt \to \min \\
+        \dot{x} = f(x,u,t), \ x(\tau) = z \\
+        u(t) \in U,\ t \in T(\tau) = [\tau, t_f]
+    \end{cases}
+\end{equation}
+--- зависящее от $\tau \in T$ и $z \in \mathbb{R}^n$ \\
+$B(\tau,\ z) = \min_u J(u\ |\ \tau,\ z ),\ \tau \in T, \ z \in \mathbb{R}^n$ --- функция Беллмана
+После вывода уравнения Белламана получим решение уравнения: 
+$$
+    \frac{\partial B(\tau,\ z)}{\partial z} f(z,\ u^0(\tau,\ z)) + f_0(z,\ u^0(\tau,\ z),\ z) = \min_{v \in U}(\frac{\partial B(\tau,\ z)^{'}}{\partial z} f(z,\ v,\ \tau) + f_0(z,\ v,\ \tau)), \ \forall \tau \in T,\ z \in \mathbb{R}^n
+$$
