@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.24)  6 MAY 2020 19:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.24)  12 MAY 2020 23:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -701,6 +701,9 @@ LaTeX Warning: Label `chap2' multiply defined.
 
 LaTeX Warning: Label `chap2' multiply defined.
 
+
+LaTeX Warning: Label `2sec:parametric-programming-mpc' multiply defined.
+
 )
 \openout1 = `CourseWorkSample.aux'.
 
@@ -797,11 +800,6 @@ Overfull \hbox (7.9181pt too wide) detected at line 21
 
 Overfull \hbox (7.9181pt too wide) detected at line 27
 \T2A/cmr/bx/n/14.4 4 
- []
-
-
-Overfull \hbox (7.9181pt too wide) detected at line 30
-\T2A/cmr/bx/n/14.4 5 
  []
 
 )
@@ -1143,84 +1141,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 637--638
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 [35
 
-] [36]
+] [36] [37]
 
-LaTeX Warning: Command \CYRA invalid in math mode on input line 107.
+LaTeX Warning: Command \CYRA invalid in math mode on input line 155.
 
 
-LaTeX Warning: Command \CYRE invalid in math mode on input line 107.
+LaTeX Warning: Command \CYRE invalid in math mode on input line 155.
 
 Missing character: There is no ј in font cmr12!
 Missing character: There is no ≈ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--129
+Underfull \hbox (badness 10000) in paragraph at lines 176--181
 
  []
 
-[37]
-Underfull \hbox (badness 1546) in paragraph at lines 180--187
+[38] [39]
+Underfull \hbox (badness 1546) in paragraph at lines 232--239
 \T2A/cmr/m/n/14.4 наи-ско-рей-шим успо-ко-е-ни-ем по-ни-ма-ет-с€ пе-ре-вод в на-ча-ло ко-ор-ди-нат и
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--187
+Underfull \hbox (badness 10000) in paragraph at lines 232--239
 
- []
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-[39]
-Overfull \hbox (55.16635pt too wide) detected at line 271
-[]
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 291--294
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
 
-Overfull \hbox (127.58516pt too wide) detected at line 318
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
+
+ []
+
+
+Overfull \hbox (55.16635pt too wide) detected at line 323
+[]
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 343--346
+
+ []
+
+[42]
+Overfull \hbox (127.58516pt too wide) detected at line 370
 []\OML/cmm/m/it/14.4 f\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 z;  u[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 ^^\;  z\OT1/cmr/m/n/14.4 )) + \OML/cmm/m/it/14.4 f[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 z;  u[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 ^^\;  z\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 ;  z\OT1/cmr/m/n/14.4 ) = []([]\OML/cmm/m/it/14.4 f\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 z;  v;  ^^\\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 f[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 z;  v;  ^^\\OT1/cmr/m/n/14.4 ))\OML/cmm/m/it/14.4 ;  \OMS/cmsy/m/n/14.4 8\OML/cmm/m/it/14.4 ^^\ \OMS/cmsy/m/n/14.4 2 \OML/cmm/m/it/14.4 T;  z \OMS/cmsy/m/n/14.4 2 \U/msb/m/n/14.4 R[]
  []
 
-) (/Users/nikitaselyakh/Desktop/kursach/course/chapter4.tex [41]
+) (/Users/nikitaselyakh/Desktop/kursach/course/chapter4.tex [43]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
 
-Underfull \hbox (badness 1430) in paragraph at lines 7--8
+Underfull \hbox (badness 1430) in paragraph at lines 8--9
 []\T2A/cmr/m/n/14.4 ƒл€ ре-а-ли-за-ции ре-ше-ни€ за-да-чи ис-поль-зу-ет-с€ MPT3 Toolbox дл€
  []
 
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 13.
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 37.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [42
+) [44
 
-]
-Underfull \hbox (badness 5217) in paragraph at lines 49--51
-\T2A/cmr/m/n/14.4 ƒалее нуж-но на ос-но-ва-нии $\OML/cmm/m/it/14.4 mptconstructMatrices$ \T2A/cmr/m/n/14.4 по-смот-рить класс
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
-\T2A/cmr/m/n/14.4 Opt, ко-то-рый ин-кап-су-ли-ру-ет ин-фор-ма-цию и ре-ше-ни€ дл€ за-дач
- []
-
-
-Underfull \hbox (badness 5022) in paragraph at lines 49--51
-\T2A/cmr/m/n/14.4 LP/QP/pLP/pQP/LCP/pLCP. ƒл€ кон-крет-но-го мо-мен-та вре-ме-ни вы-
- []
-
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
@@ -1231,12 +1214,12 @@ Package epstopdf Info: Source file: <figure1.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 173431 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure1-eps-converted-to.pdf figure1.eps>
-(epstopdf)             \includegraphics on input line 83.
+(epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
-<figure1-eps-converted-to.pdf, id=201, 562.1pt x 421.575pt>
+<figure1-eps-converted-to.pdf, id=207, 562.1pt x 421.575pt>
 File: figure1-eps-converted-to.pdf Graphic file (type pdf)
 <use figure1-eps-converted-to.pdf>
-Package pdftex.def Info: figure1-eps-converted-to.pdf  used on input line 83.
+Package pdftex.def Info: figure1-eps-converted-to.pdf  used on input line 102.
 (pdftex.def)             Requested size: 386.95897pt x 290.21805pt.
 Package epstopdf Info: Source file: <figure5.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
@@ -1245,12 +1228,12 @@ Package epstopdf Info: Source file: <figure5.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 153807 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure5-eps-converted-to.pdf figure5.eps>
-(epstopdf)             \includegraphics on input line 85.
+(epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
-<figure5-eps-converted-to.pdf, id=202, 562.1pt x 421.575pt>
+<figure5-eps-converted-to.pdf, id=208, 562.1pt x 421.575pt>
 File: figure5-eps-converted-to.pdf Graphic file (type pdf)
 <use figure5-eps-converted-to.pdf>
-Package pdftex.def Info: figure5-eps-converted-to.pdf  used on input line 85.
+Package pdftex.def Info: figure5-eps-converted-to.pdf  used on input line 104.
 (pdftex.def)             Requested size: 386.95897pt x 290.21805pt.
 Package epstopdf Info: Source file: <figure10.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
@@ -1259,12 +1242,12 @@ Package epstopdf Info: Source file: <figure10.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 15995 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure10-eps-converted-to.pdf figure10.eps>
-(epstopdf)             \includegraphics on input line 87.
+(epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
-<figure10-eps-converted-to.pdf, id=203, 562.1pt x 421.575pt>
+<figure10-eps-converted-to.pdf, id=209, 562.1pt x 421.575pt>
 File: figure10-eps-converted-to.pdf Graphic file (type pdf)
 <use figure10-eps-converted-to.pdf>
-Package pdftex.def Info: figure10-eps-converted-to.pdf  used on input line 87.
+Package pdftex.def Info: figure10-eps-converted-to.pdf  used on input line 106.
 (pdftex.def)             Requested size: 386.95897pt x 290.21805pt.
 Package epstopdf Info: Source file: <figure20.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
@@ -1273,12 +1256,12 @@ Package epstopdf Info: Source file: <figure20.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 5211 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure20-eps-converted-to.pdf figure20.eps>
-(epstopdf)             \includegraphics on input line 91.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
-<figure20-eps-converted-to.pdf, id=204, 562.1pt x 421.575pt>
+<figure20-eps-converted-to.pdf, id=210, 562.1pt x 421.575pt>
 File: figure20-eps-converted-to.pdf Graphic file (type pdf)
 <use figure20-eps-converted-to.pdf>
-Package pdftex.def Info: figure20-eps-converted-to.pdf  used on input line 91.
+Package pdftex.def Info: figure20-eps-converted-to.pdf  used on input line 110.
 (pdftex.def)             Requested size: 386.95897pt x 290.21805pt.
 Package epstopdf Info: Source file: <graphics.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
@@ -1287,23 +1270,41 @@ Package epstopdf Info: Source file: <graphics.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 6988 bytes
 (epstopdf)             Command: <repstopdf --outfile=graphics-eps-converted-to.pdf graphics.eps>
-(epstopdf)             \includegraphics on input line 93.
+(epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
-<graphics-eps-converted-to.pdf, id=205, 562.1pt x 421.575pt>
+<graphics-eps-converted-to.pdf, id=211, 562.1pt x 421.575pt>
 File: graphics-eps-converted-to.pdf Graphic file (type pdf)
 <use graphics-eps-converted-to.pdf>
-Package pdftex.def Info: graphics-eps-converted-to.pdf  used on input line 93.
+Package pdftex.def Info: graphics-eps-converted-to.pdf  used on input line 112.
 (pdftex.def)             Requested size: 386.95897pt x 290.21805pt.
-) [44 </Users/nikitaselyakh/Desktop/kursach/course/figure1-eps-converted-to.pdf>] [45 </Users/nikitaselyakh/Desktop/kursach/course/figure5-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure10-eps-converted-to.pdf>] (/Users/nikitaselyakh/Desktop/kursach/course/conclusions.tex [46 </Users/nikitaselyakh/Desktop/kursach/course/figure20-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/graphics-eps-converted-to.pdf>]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
-) (/Users/nikitaselyakh/Desktop/kursach/course/bibliography.tex [47
+[46] [47 </Users/nikitaselyakh/Desktop/kursach/course/figure1-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure5-eps-converted-to.pdf>] [48 </Users/nikitaselyakh/Desktop/kursach/course/figure10-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure20-eps-converted-to.pdf>] [49 </Users/nikitaselyakh/Desktop/kursach/course/graphics-eps-converted-to.pdf>]
+Overfull \hbox (261.75635pt too wide) in paragraph at lines 188--188
+[]    \T2A/cmtt/m/n/14.4 x(:,i+1) = F(h)*x(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b,t0+i*h,t0+(i+1)*h,'ArrayValued',true);[] 
+ []
+
+
+Overfull \hbox (312.9149pt too wide) in paragraph at lines 188--188
+[]    \T2A/cmtt/m/n/14.4 x1(:,i+1) = F(h)*x1(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b+w(t),t0+i*h,t0+(i+1)*h,'ArrayValued',true);[] 
+ []
+
+[50]
+Overfull \hbox (100.97232pt too wide) in paragraph at lines 207--207
+[]        \T2A/cmtt/m/n/14.4 u1 = linprog(-ch(j:N),[],[],dh(j:N),g0,-L*ones(N-j+1,1),L*ones(N-j+1,1))[] 
+ []
+
+
+Overfull \hbox (342.14836pt too wide) in paragraph at lines 207--207
+[]        \T2A/cmtt/m/n/14.4 x2(:,j+1) = F(h)*x2(:,j)+integral(@(t)u2(j)*F(t0+(j+1)*h-t)*b+w(t),t0+j*h,t0+(j+1)*h,'ArrayValued',true);[] 
+ []
+
+) (/Users/nikitaselyakh/Desktop/kursach/course/conclusions.tex [51]) (/Users/nikitaselyakh/Desktop/kursach/course/bibliography.tex [52
 
 ]
 Underfull \hbox (badness 3460) in paragraph at lines 12--13
 []\T2A/cmr/m/n/14.4 T. Gal and J. Nedoma. Multiparametric linear programming.
  []
 
-) [48
+) [53
 
 ] (/Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.aux)
 
@@ -1314,18 +1315,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17345 strings out of 492616
- 320866 string characters out of 6129481
- 387807 words of memory out of 5000000
- 20878 multiletter control sequences out of 15000+600000
+ 17349 strings out of 492616
+ 320898 string characters out of 6129481
+ 387859 words of memory out of 5000000
+ 20882 multiletter control sequences out of 15000+600000
  13092 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,21n,50p,1272b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on /Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.pdf (48 pages, 1304167 bytes).
+Output written on /Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.pdf (53 pages, 1313216 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
+ 328 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
