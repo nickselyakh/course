@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.24)  17 MAY 2020 16:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.24)  17 MAY 2020 17:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -707,7 +707,27 @@ Package: relsize 2013/03/29 ver 4.1
 \c@algocf=\count152
 \algocf@algoframe=\box49
 \algocf@algobox=\box50
-) (/Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.aux)
+) (/Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.aux
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 4.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+
+LaTeX Warning: Label `9problem' multiply defined.
+
+
+LaTeX Warning: Label `chap2' multiply defined.
+
+
+LaTeX Warning: Label `chap2' multiply defined.
+
+
+LaTeX Warning: Label `2sec:parametric-programming-mpc' multiply defined.
+
+
+LaTeX Warning: Label `2sec:parametric-programming-mpc' multiply defined.
+
+)
 \openout1 = `CourseWorkSample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -723,10 +743,6 @@ LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 15.
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 15.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
-File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
 LaTeX Font Info:    ... okay on input line 15.
  (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -792,6 +808,491 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--41
 
 [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-!pdfTeX error: pdflatex: fflush() failed (No space left on device)
- ==> Fatal error occurred, no output PDF file produced!
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.toc
+Overfull \hbox (7.9181pt too wide) detected at line 4
+\T2A/cmr/bx/n/14.4 1 
+ []
+
+
+Overfull \hbox (7.9181pt too wide) detected at line 15
+\T2A/cmr/bx/n/14.4 2 
+ []
+
+
+Overfull \hbox (7.9181pt too wide) detected at line 25
+\T2A/cmr/bx/n/14.4 3 
+ []
+
+
+Overfull \hbox (7.9181pt too wide) detected at line 28
+\T2A/cmr/bx/n/14.4 4 
+ []
+
+)
+\tf@toc=\write4
+\openout4 = `CourseWorkSample.toc'.
+
+ (/Users/nikitaselyakh/Desktop/kursach/course/referat.tex [2
+
+]
+Underfull \hbox (badness 1383) in paragraph at lines 24--27
+[]\T2A/cmr/m/n/14.4 Основные ре-зуль-та-ты ра-бо-ты --- ис-сле-до-ва-ны ос-нов-ныx по-ло-же-ний
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 24--27
+\T2A/cmr/m/n/14.4 ско-го про-грам-ми-ро-ва-ния с даль-ней-шим раз-ви-тие на про-бле-му син-те-за
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 1867) in paragraph at lines 57--58
+\T2A/cmr/m/n/14.4 ПА ПРА-Г-НА-ЗУ-Ю-ЧАЙ МА-Д-ЭЛI, АЛ-ГА-РЫ-ТМ, ШМАТ-ПА-РА-МЕТ-РЫ-
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 57--58
+\T2A/cmr/m/n/14.4 ЧАС-КI IН-СТРУ-МЕН-ТА-РЫЙ, ШМАТ-ПА-РА-МЕТ-РЫ-ЧАС-КАЕ ПРА-ГРА-
+ []
+
+) (/Users/nikitaselyakh/Desktop/kursach/course/intro.tex [4] [5
+
+]) (/Users/nikitaselyakh/Desktop/kursach/course/chapter1.tex [6]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+ |[]\T2A/cmr/bx/n/17.28 Основные ре-зуль-та-ты тео-рии оп-ти-маль-но-го
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [7
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 67.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+ [8] [9] [10] [11]
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 162.
+
+
+LaTeX Warning: Command \cyrs invalid in math mode on input line 162.
+
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 162.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 162.
+
+Missing character: There is no е in font cmr12!
+Missing character: There is no с in font cmr12!
+Missing character: There is no л in font cmr12!
+Missing character: There is no и in font cmr12!
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 192--196
+
+ []
+
+
+LaTeX Warning: Command \cyrh invalid in math mode on input line 200.
+
+Missing character: There is no х in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+[]\T2A/cmr/m/n/14.4 Допустимое про-грамм-ное управ-ле-ние (про-грам-ма) --- кусочно-
+ []
+
+[13] [14] [15] [16] [17] [18] [19] [20]) (/Users/nikitaselyakh/Desktop/kursach/course/chapter2.tex [21]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
+[22
+
+] [23] [24] [25] [26] [27]
+Underfull \hbox (badness 3792) in paragraph at lines 217--218
+[]\T2A/cmr/m/n/14.4 Сформулированная тео-ре-ма утвер-жда-ет, что в за-да-че ли-ней-но-го
+ []
+
+[28]
+Underfull \hbox (badness 2538) in paragraph at lines 234--234
+ |[]\T2A/cmr/bx/n/17.28 Алгоритм по-стро-е-ния мно-го-па-ра-мет-ри-че-ско-го
+ []
+
+[29] [30] [31] [32] [33]
+
+LaTeX Warning: Citation `Bemporad25' on page 34 undefined on input line 439.
+
+[34] [35]
+Package epstopdf Info: Source file: <course-img.eps>
+(epstopdf)                    date: 2020-03-25 11:09:30
+(epstopdf)                    size: 1490780 bytes
+(epstopdf)             Output file: <course-img-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-25 11:10:20
+(epstopdf)                    size: 37633 bytes
+(epstopdf)             Command: <repstopdf --outfile=course-img-eps-converted-to.pdf course-img.eps>
+(epstopdf)             \includegraphics on input line 517.
+Package epstopdf Info: Output file is already uptodate.
+<course-img-eps-converted-to.pdf, id=134, 261.97874pt x 145.54375pt>
+File: course-img-eps-converted-to.pdf Graphic file (type pdf)
+<use course-img-eps-converted-to.pdf>
+Package pdftex.def Info: course-img-eps-converted-to.pdf  used on input line 517.
+(pdftex.def)             Requested size: 386.95897pt x 214.98384pt.
+Package epstopdf Info: Source file: <mpt-9.eps>
+(epstopdf)                    date: 2020-03-16 11:27:45
+(epstopdf)                    size: 554688 bytes
+(epstopdf)             Output file: <mpt-9-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-16 11:28:05
+(epstopdf)                    size: 10100 bytes
+(epstopdf)             Command: <repstopdf --outfile=mpt-9-eps-converted-to.pdf mpt-9.eps>
+(epstopdf)             \includegraphics on input line 532.
+Package epstopdf Info: Output file is already uptodate.
+<mpt-9-eps-converted-to.pdf, id=135, 250.9375pt x 56.21pt>
+File: mpt-9-eps-converted-to.pdf Graphic file (type pdf)
+<use mpt-9-eps-converted-to.pdf>
+Package pdftex.def Info: mpt-9-eps-converted-to.pdf  used on input line 532.
+(pdftex.def)             Requested size: 483.69687pt x 108.36108pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <mpt-4.eps>
+(epstopdf)                    date: 2020-03-16 11:19:46
+(epstopdf)                    size: 5091601 bytes
+(epstopdf)             Output file: <mpt-4-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-16 11:25:35
+(epstopdf)                    size: 138150 bytes
+(epstopdf)             Command: <repstopdf --outfile=mpt-4-eps-converted-to.pdf mpt-4.eps>
+(epstopdf)             \includegraphics on input line 543.
+Package epstopdf Info: Output file is already uptodate.
+<mpt-4-eps-converted-to.pdf, id=136, 875.27pt x 149.55875pt>
+File: mpt-4-eps-converted-to.pdf Graphic file (type pdf)
+<use mpt-4-eps-converted-to.pdf>
+Package pdftex.def Info: mpt-4-eps-converted-to.pdf  used on input line 543.
+(pdftex.def)             Requested size: 483.69687pt x 82.65007pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36 </Users/nikitaselyakh/Desktop/kursach/course/course-img-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <mpt-3.eps>
+(epstopdf)                    date: 2020-03-16 11:19:45
+(epstopdf)                    size: 1764433 bytes
+(epstopdf)             Output file: <mpt-3-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-16 11:25:18
+(epstopdf)                    size: 32797 bytes
+(epstopdf)             Command: <repstopdf --outfile=mpt-3-eps-converted-to.pdf mpt-3.eps>
+(epstopdf)             \includegraphics on input line 558.
+Package epstopdf Info: Output file is already uptodate.
+<mpt-3-eps-converted-to.pdf, id=143, 468.75125pt x 96.36pt>
+File: mpt-3-eps-converted-to.pdf Graphic file (type pdf)
+<use mpt-3-eps-converted-to.pdf>
+Package pdftex.def Info: mpt-3-eps-converted-to.pdf  used on input line 558.
+(pdftex.def)             Requested size: 483.69687pt x 99.43126pt.
+Package epstopdf Info: Source file: <mpt-2.eps>
+(epstopdf)                    date: 2020-03-16 11:19:45
+(epstopdf)                    size: 2788080 bytes
+(epstopdf)             Output file: <mpt-2-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-16 11:25:17
+(epstopdf)                    size: 46444 bytes
+(epstopdf)             Command: <repstopdf --outfile=mpt-2-eps-converted-to.pdf mpt-2.eps>
+(epstopdf)             \includegraphics on input line 566.
+Package epstopdf Info: Output file is already uptodate.
+<mpt-2-eps-converted-to.pdf, id=144, 599.23875pt x 119.44624pt>
+File: mpt-2-eps-converted-to.pdf Graphic file (type pdf)
+<use mpt-2-eps-converted-to.pdf>
+Package pdftex.def Info: mpt-2-eps-converted-to.pdf  used on input line 566.
+(pdftex.def)             Requested size: 483.69687pt x 96.41737pt.
+ [37 </Users/nikitaselyakh/Desktop/kursach/course/mpt-9-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/mpt-4-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/mpt-3-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/mpt-2-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+
+ []
+
+Package epstopdf Info: Source file: <mpt-5.eps>
+(epstopdf)                    date: 2020-03-16 11:20:31
+(epstopdf)                    size: 2275383 bytes
+(epstopdf)             Output file: <mpt-5-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-16 11:25:35
+(epstopdf)                    size: 42235 bytes
+(epstopdf)             Command: <repstopdf --outfile=mpt-5-eps-converted-to.pdf mpt-5.eps>
+(epstopdf)             \includegraphics on input line 596.
+Package epstopdf Info: Output file is already uptodate.
+<mpt-5-eps-converted-to.pdf, id=161, 184.69pt x 315.1775pt>
+File: mpt-5-eps-converted-to.pdf Graphic file (type pdf)
+<use mpt-5-eps-converted-to.pdf>
+Package pdftex.def Info: mpt-5-eps-converted-to.pdf  used on input line 596.
+(pdftex.def)             Requested size: 193.47578pt x 330.17186pt.
+Package epstopdf Info: Source file: <mpt8.eps>
+(epstopdf)                    date: 2020-03-16 11:20:31
+(epstopdf)                    size: 523139 bytes
+(epstopdf)             Output file: <mpt8-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-16 11:26:36
+(epstopdf)                    size: 24408 bytes
+(epstopdf)             Command: <repstopdf --outfile=mpt8-eps-converted-to.pdf mpt8.eps>
+(epstopdf)             \includegraphics on input line 612.
+Package epstopdf Info: Output file is already uptodate.
+<mpt8-eps-converted-to.pdf, id=162, 120.45pt x 110.4125pt>
+File: mpt8-eps-converted-to.pdf Graphic file (type pdf)
+<use mpt8-eps-converted-to.pdf>
+Package pdftex.def Info: mpt8-eps-converted-to.pdf  used on input line 612.
+(pdftex.def)             Requested size: 193.47578pt x 177.36949pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <mpt-7.eps>
+(epstopdf)                    date: 2020-03-16 11:20:31
+(epstopdf)                    size: 671805 bytes
+(epstopdf)             Output file: <mpt-7-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-16 11:26:13
+(epstopdf)                    size: 30302 bytes
+(epstopdf)             Command: <repstopdf --outfile=mpt-7-eps-converted-to.pdf mpt-7.eps>
+(epstopdf)             \includegraphics on input line 621.
+Package epstopdf Info: Output file is already uptodate.
+<mpt-7-eps-converted-to.pdf, id=163, 350.30875pt x 315.1775pt>
+File: mpt-7-eps-converted-to.pdf Graphic file (type pdf)
+<use mpt-7-eps-converted-to.pdf>
+Package pdftex.def Info: mpt-7-eps-converted-to.pdf  used on input line 621.
+(pdftex.def)             Requested size: 145.11053pt x 130.56056pt.
+[38 </Users/nikitaselyakh/Desktop/kursach/course/mpt-5-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <mpt-6.eps>
+(epstopdf)                    date: 2020-03-16 11:20:31
+(epstopdf)                    size: 681619 bytes
+(epstopdf)             Output file: <mpt-6-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-16 11:25:57
+(epstopdf)                    size: 43369 bytes
+(epstopdf)             Command: <repstopdf --outfile=mpt-6-eps-converted-to.pdf mpt-6.eps>
+(epstopdf)             \includegraphics on input line 631.
+Package epstopdf Info: Output file is already uptodate.
+<mpt-6-eps-converted-to.pdf, id=170, 368.37625pt x 304.13625pt>
+File: mpt-6-eps-converted-to.pdf Graphic file (type pdf)
+<use mpt-6-eps-converted-to.pdf>
+Package pdftex.def Info: mpt-6-eps-converted-to.pdf  used on input line 631.
+(pdftex.def)             Requested size: 169.29684pt x 139.76978pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
+
+ []
+
+[39 </Users/nikitaselyakh/Desktop/kursach/course/mpt8-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/mpt-7-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/mpt-6-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <parametric-img.eps>
+(epstopdf)                    date: 2020-03-25 13:21:10
+(epstopdf)                    size: 8764275 bytes
+(epstopdf)             Output file: <parametric-img-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-25 13:35:29
+(epstopdf)                    size: 192003 bytes
+(epstopdf)             Command: <repstopdf --outfile=parametric-img-eps-converted-to.pdf parametric-img.eps>
+(epstopdf)             \includegraphics on input line 661.
+Package epstopdf Info: Output file is already uptodate.
+<parametric-img-eps-converted-to.pdf, id=183, 554.07pt x 406.51875pt>
+File: parametric-img-eps-converted-to.pdf Graphic file (type pdf)
+<use parametric-img-eps-converted-to.pdf>
+Package pdftex.def Info: parametric-img-eps-converted-to.pdf  used on input line 661.
+(pdftex.def)             Requested size: 241.84843pt x 177.44211pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--666
+
+ []
+
+[40 </Users/nikitaselyakh/Desktop/kursach/course/parametric-img-eps-converted-to.pdf>]) (/Users/nikitaselyakh/Desktop/kursach/course/chapter3.tex [41]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
+[42
+
+] [43] [44]
+
+LaTeX Warning: Command \CYRA invalid in math mode on input line 155.
+
+
+LaTeX Warning: Command \CYRE invalid in math mode on input line 155.
+
+Missing character: There is no А in font cmr12!
+Missing character: There is no Е in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--181
+
+ []
+
+[45] [46] [47] [48]) (/Users/nikitaselyakh/Desktop/kursach/course/chapter4.tex [49]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 31.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+) [50
+
+]
+Package epstopdf Info: Source file: <u-mpc.eps>
+(epstopdf)                    date: 2020-05-16 16:55:26
+(epstopdf)                    size: 15675 bytes
+(epstopdf)             Output file: <u-mpc-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-16 18:17:49
+(epstopdf)                    size: 5961 bytes
+(epstopdf)             Command: <repstopdf --outfile=u-mpc-eps-converted-to.pdf u-mpc.eps>
+(epstopdf)             \includegraphics on input line 84.
+Package epstopdf Info: Output file is already uptodate.
+<u-mpc-eps-converted-to.pdf, id=224, 562.1pt x 421.575pt>
+File: u-mpc-eps-converted-to.pdf Graphic file (type pdf)
+<use u-mpc-eps-converted-to.pdf>
+Package pdftex.def Info: u-mpc-eps-converted-to.pdf  used on input line 84.
+(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+Package epstopdf Info: Source file: <controller-partition.eps>
+(epstopdf)                    date: 2020-05-16 15:57:45
+(epstopdf)                    size: 70108 bytes
+(epstopdf)             Output file: <controller-partition-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-16 18:17:50
+(epstopdf)                    size: 59960 bytes
+(epstopdf)             Command: <repstopdf --outfile=controller-partition-eps-converted-to.pdf controller-partition.eps>
+(epstopdf)             \includegraphics on input line 88.
+Package epstopdf Info: Output file is already uptodate.
+<controller-partition-eps-converted-to.pdf, id=225, 562.1pt x 421.575pt>
+File: controller-partition-eps-converted-to.pdf Graphic file (type pdf)
+<use controller-partition-eps-converted-to.pdf>
+Package pdftex.def Info: controller-partition-eps-converted-to.pdf  used on input line 88.
+(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+
+Underfull \hbox (badness 1430) in paragraph at lines 97--98
+[]\T2A/cmr/m/n/14.4 Для ре-а-ли-за-ции ре-ше-ния за-да-чи ис-поль-зу-ет-ся MPT3 Toolbox для
+ []
+
+[51 </Users/nikitaselyakh/Desktop/kursach/course/u-mpc-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/controller-partition-eps-converted-to.pdf>] [52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+
+ []
+
+Package epstopdf Info: Source file: <figure1.eps>
+(epstopdf)                    date: 2020-03-07 22:36:03
+(epstopdf)                    size: 191516 bytes
+(epstopdf)             Output file: <figure1-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-07 22:36:03
+(epstopdf)                    size: 173431 bytes
+(epstopdf)             Command: <repstopdf --outfile=figure1-eps-converted-to.pdf figure1.eps>
+(epstopdf)             \includegraphics on input line 204.
+Package epstopdf Info: Output file is already uptodate.
+<figure1-eps-converted-to.pdf, id=250, 562.1pt x 421.575pt>
+File: figure1-eps-converted-to.pdf Graphic file (type pdf)
+<use figure1-eps-converted-to.pdf>
+Package pdftex.def Info: figure1-eps-converted-to.pdf  used on input line 204.
+(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+Package epstopdf Info: Source file: <figure5.eps>
+(epstopdf)                    date: 2020-03-07 22:36:03
+(epstopdf)                    size: 171166 bytes
+(epstopdf)             Output file: <figure5-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-07 22:36:03
+(epstopdf)                    size: 153807 bytes
+(epstopdf)             Command: <repstopdf --outfile=figure5-eps-converted-to.pdf figure5.eps>
+(epstopdf)             \includegraphics on input line 208.
+Package epstopdf Info: Output file is already uptodate.
+<figure5-eps-converted-to.pdf, id=251, 562.1pt x 421.575pt>
+File: figure5-eps-converted-to.pdf Graphic file (type pdf)
+<use figure5-eps-converted-to.pdf>
+Package pdftex.def Info: figure5-eps-converted-to.pdf  used on input line 208.
+(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+Package epstopdf Info: Source file: <figure10.eps>
+(epstopdf)                    date: 2020-03-07 22:36:03
+(epstopdf)                    size: 119576 bytes
+(epstopdf)             Output file: <figure10-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-07 22:36:03
+(epstopdf)                    size: 15995 bytes
+(epstopdf)             Command: <repstopdf --outfile=figure10-eps-converted-to.pdf figure10.eps>
+(epstopdf)             \includegraphics on input line 212.
+Package epstopdf Info: Output file is already uptodate.
+<figure10-eps-converted-to.pdf, id=252, 562.1pt x 421.575pt>
+File: figure10-eps-converted-to.pdf Graphic file (type pdf)
+<use figure10-eps-converted-to.pdf>
+Package pdftex.def Info: figure10-eps-converted-to.pdf  used on input line 212.
+(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+Package epstopdf Info: Source file: <figure20.eps>
+(epstopdf)                    date: 2020-03-07 22:36:03
+(epstopdf)                    size: 16603 bytes
+(epstopdf)             Output file: <figure20-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-07 22:36:03
+(epstopdf)                    size: 5211 bytes
+(epstopdf)             Command: <repstopdf --outfile=figure20-eps-converted-to.pdf figure20.eps>
+(epstopdf)             \includegraphics on input line 216.
+Package epstopdf Info: Output file is already uptodate.
+<figure20-eps-converted-to.pdf, id=253, 562.1pt x 421.575pt>
+File: figure20-eps-converted-to.pdf Graphic file (type pdf)
+<use figure20-eps-converted-to.pdf>
+Package pdftex.def Info: figure20-eps-converted-to.pdf  used on input line 216.
+(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+Package epstopdf Info: Source file: <graphics.eps>
+(epstopdf)                    date: 2020-03-07 22:36:03
+(epstopdf)                    size: 24333 bytes
+(epstopdf)             Output file: <graphics-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-07 22:36:03
+(epstopdf)                    size: 6988 bytes
+(epstopdf)             Command: <repstopdf --outfile=graphics-eps-converted-to.pdf graphics.eps>
+(epstopdf)             \includegraphics on input line 220.
+Package epstopdf Info: Output file is already uptodate.
+<graphics-eps-converted-to.pdf, id=254, 562.1pt x 421.575pt>
+File: graphics-eps-converted-to.pdf Graphic file (type pdf)
+<use graphics-eps-converted-to.pdf>
+Package pdftex.def Info: graphics-eps-converted-to.pdf  used on input line 220.
+(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+[54 </Users/nikitaselyakh/Desktop/kursach/course/figure1-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure5-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure10-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure20-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/graphics-eps-converted-to.pdf>] [55]
+Overfull \hbox (261.75635pt too wide) in paragraph at lines 300--300
+[]    \T2A/cmtt/m/n/14.4 x(:,i+1) = F(h)*x(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b,t0+i*h,t0+(i+1)*h,'ArrayValued',true);[] 
+ []
+
+
+Overfull \hbox (312.9149pt too wide) in paragraph at lines 300--300
+[]    \T2A/cmtt/m/n/14.4 x1(:,i+1) = F(h)*x1(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b+w(t),t0+i*h,t0+(i+1)*h,'ArrayValued',true);[] 
+ []
+
+
+Overfull \hbox (100.97232pt too wide) in paragraph at lines 319--319
+[]        \T2A/cmtt/m/n/14.4 u1 = linprog(-ch(j:N),[],[],dh(j:N),g0,-L*ones(N-j+1,1),L*ones(N-j+1,1))[] 
+ []
+
+
+Overfull \hbox (342.14836pt too wide) in paragraph at lines 319--319
+[]        \T2A/cmtt/m/n/14.4 x2(:,j+1) = F(h)*x2(:,j)+integral(@(t)u2(j)*F(t0+(j+1)*h-t)*b+w(t),t0+j*h,t0+(j+1)*h,'ArrayValued',true);[] 
+ []
+
+) (/Users/nikitaselyakh/Desktop/kursach/course/conclusions.tex [56]) (/Users/nikitaselyakh/Desktop/kursach/course/bibliography.tex [57
+
+]
+Underfull \hbox (badness 3460) in paragraph at lines 12--13
+[]\T2A/cmr/m/n/14.4 T. Gal and J. Nedoma. Multiparametric linear programming.
+ []
+
+) [58
+
+] (/Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 18529 strings out of 492616
+ 342334 string characters out of 6129481
+ 407714 words of memory out of 5000000
+ 22046 multiletter control sequences out of 15000+600000
+ 14785 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,21n,50p,1272b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
+Output written on /Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.pdf (58 pages, 1448721 bytes).
+PDF statistics:
+ 368 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+

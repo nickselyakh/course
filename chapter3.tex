@@ -348,25 +348,51 @@ $$
 
 Вектор неизвестных: $(x, u1, u2)$
 
-$\overline{x} = x(\tau), x(\tau +h) ... x(t_f)$
-$u_1, u_2$
-E = n*n
-
-\begin{equation}
-    A = \begin{bmatrix}
-        E & 0...0 & 0 & 0\\
-        0...0 & E & 0 & 0\\
-        -Ah(k) & E & 0..0 & -bh(k) \ 0..0 & bh(k) \ 0..0\\
-        0 & -Ah(k+h) & E & 0..0 & 0 \ -bh(k+h) \ 0..0 & 0 \ bh(k+h) \ 0..0\\
-        ...\\
-        0..0 & -Ah(N) & E & 0..0 \ -bh(N) & 0..0 \ bh(N)
+Примем $\tau = kh$ и распишем получившиеся матрицы в блочном виде:
+$$
+    C = \begin{bmatrix}
+        0\\
+        \cdots\\
+        0\\
+        -h\\
+        \cdots\\
+        -h
     \end{bmatrix}\\
+    d_{*} = \begin{bmatrix}
+        -\infty\\
+        \cdots\\
+        -\infty\\
+        0\\
+        \cdots\\
+        0
+    \end{bmatrix}
+    d^{*} = \begin{bmatrix}
+        +\infty\\
+        \cdots\\
+        +\infty\\
+        1\\
+        \cdots\\
+        1
+    \end{bmatrix},
+$$
+где размерности векторов $x = (N+1-k)n$ и $u = 2r(N - k)$.
+
+Матрицы $b$ и $A$ имеют следующий вид:
+$$
     b = \begin{bmatrix}
         z\\
         0\\
-        0\\
-        0\\
-        ..\\
-        0\\
+        \cdots\\
+        0
     \end{bmatrix}
-\end{equation}
+$$
+$$
+    A = \begin{bmatrix}
+        E_{n \times n} & 0_{n \times n} & \cdots & 0_{n \times n} & 0_{n \times r} \cdots 0_{n \times r} & 0_{n \times r} \cdots 0_{n \times r}\\
+        0_{n \times n} & 0_{n \times n} & \cdots & E_{n \times n} & 0_{n \times r} \cdots 0_{n \times r} & 0_{n \times r} \cdots 0_{n \times r}\\
+        -A_h(\tau) & E_{n \times n} & \cdots & 0_{n \times n} & -B_h(\tau) \cdots 0_{n \times r} & B_h(\tau) \cdots 0_{n \times r}\\
+        \cdots\\
+        0_{n \times n} & 0_{n \times n} & .. -A_h(t_f - h) & E_{n \times n} & .. -B_h(t_f-h) & .. B_h(t_f-h)
+    \end{bmatrix}
+$$
+где $n(2 + N - k)$ --- количество строк, $(N + 1 - k)n + 2r(N -k)$ --- количество столбцов
