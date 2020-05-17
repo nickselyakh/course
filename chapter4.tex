@@ -5,6 +5,95 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Применение параметрического программирования в MPC}\label{2sec:parametric-programming-mpc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Рассмотрим возможности MPT при решении следующей задачи:
+\begin{equation}
+    \begin{aligned}
+        & x (t + 1) = \begin{bmatrix}
+            1 & 1\\
+            0 & 1
+        \end{bmatrix}x(t) + \begin{bmatrix}
+            1\\
+            0.5
+        \end{bmatrix}u(t) \\
+        & y(t) = \begin{bmatrix}
+            1 & 0\\
+            0 & 1
+        \end{bmatrix}x(t)
+    \end{aligned}
+\end{equation}
+c ограничениями $-5 \le x \le 5$ и $-1 \le u \le 1$. Рассмотрим задачу MPC с горизонтом прогнозирования $N$ = 7, квадратичной нормой и весовыми матрицами $Q = \begin{bmatrix}
+    1 & 0\\
+    0 & 1
+\end{bmatrix}$ и $R = 1$. Для данного примерна задача многопараметрического программирования была решена с использованием панели инструментов MPT.
+
+Матрицы для задачи будут следующие:
+\begin{verbatim}
+A = [ 1, 1; 0,  1];
+B = [ 1; 0.5];
+C = [1, 0; 0, 1];
+D = 0;
+\end{verbatim}
+
+Задаем линейную модель с дискретным временем:
+
+\begin{verbatim}
+sys = ss(A,B,C,D,1);
+model = LTISystem(sys);
+\end{verbatim}
+
+Зададим ограничения:
+
+\begin{verbatim}
+model.x.min = [-5; -5];
+model.x.max = [5; 5];
+model.y.min = [-10; -10];
+model.y.max = [10; 10];
+model.u.min = -1;
+model.u.max = 1;
+R = 1;
+model.u.penalty = QuadFunction(R);
+model.x.penalty = QuadFunction(eye(2));
+model.u.penalty = QuadFunction(1);
+\end{verbatim}
+
+Вычсляем терминальные значения:
+\begin{verbatim}
+P = model.LQRPenalty;
+Tset = model.LQRSet;
+\end{verbatim}
+
+И, наконец, формулируем задачу MPC:
+\begin{verbatim}
+ctrl = MPCController(model,7);
+\end{verbatim}
+
+Результаты моделирования замкнутой системы (управляющее воздействие для $x_0 = [3; 1]$ и траектории для нескольких начальных значений) показаны на рис. \ref{fig:4-1-res}
+
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=0.6\textwidth]{u-mpc.eps}
+%     \includegraphics[width=0.6\textwidth]{controller-partition.eps}
+%     \caption{Результаты}
+%     \label{4-1-res}
+% \end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.4\linewidth}
+      \includegraphics[width=\linewidth]{u-mpc.eps}
+      \caption{Управляющее воздействие}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\linewidth}
+      \includegraphics[width=\linewidth]{controller-partition.eps}
+      \caption{"Controller partition" для разных начальных значений}
+    \end{subfigure}
+    \caption{Результаты}
+    \label{fig:4-1-res}
+  \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Применение параметрического программирования в задаче синтеза оптимальной линейной системы}\label{2sec:parametric-programming-mpc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Для реализации решения задачи используется MPT3 Toolbox для Matlab, описанный в главе выше.
 
 Первоначально нужно задать все начальные значения, чтобы передать их в $mpt constructMatrices$.
@@ -96,23 +185,46 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Результаты}\label{2sec:results}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Далее проилюстриуем наглядно полученные результаты на каждом 5 шаге\\ 
+Далее проилюстриуем наглядно полученные результаты на каждом 5 шаге (рис. \ref{4-img-1}).\\ 
 
-N = 20
-\includegraphics[width=0.8\textwidth]{figure1.eps}\\
-N = 15
-\includegraphics[width=0.8\textwidth]{figure5.eps}\\
-N = 10
-\includegraphics[width=0.8\textwidth]{figure10.eps}\\
-N = 5
-% \includegraphics[width=0.8\textwidth]{figure15.eps}\\
-N = 1
-\includegraphics[width=0.8\textwidth]{figure20.eps}\\
-X и U
-\includegraphics[width=0.8\textwidth]{graphics.eps}
+% N = 20
+% \includegraphics[width=0.8\textwidth]{figure1.eps}\\
+% N = 15
+% \includegraphics[width=0.8\textwidth]{figure5.eps}\\
+% N = 10
+% \includegraphics[width=0.8\textwidth]{figure10.eps}\\
+% N = 1
+% \includegraphics[width=0.8\textwidth]{figure20.eps}\\
+% X и U
+% \includegraphics[width=0.8\textwidth]{graphics.eps}
 
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=1\textwidth]{figure1.eps}
+      \caption{N = 20}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=1\textwidth]{figure5.eps}
+      \caption{N = 15}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=1\textwidth]{figure10.eps}
+      \caption{N = 10}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=1\textwidth]{figure20.eps}
+      \caption{N = 1}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=1\textwidth]{graphics.eps}
+      \caption{X и U}
+    \end{subfigure}
+    \caption{Результаты}
+    \label{4-img-1}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Применение параметрического программирования в задаче синтеза оптимальной линейной системы}\label{2sec:parametric-programming-mpc}
+\subsection{Пример решения задачи синтеза оптимальной линейной системы без MPT}\label{2sec:parametric-programming-mpc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Ранее была рассмотрена теоретическая база по построению классической оптимальной обратной связи. В данной главе проилюстриуем, как параметрическое программирование применяется в задачах синтеза оптимальной линейной системы.
