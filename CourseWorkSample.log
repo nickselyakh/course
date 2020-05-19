@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.24)  17 MAY 2020 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.24)  19 MAY 2020 21:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,6 +854,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
 
+
+Underfull \hbox (badness 3977) in paragraph at lines 32--33
+\T2A/cmr/m/n/14.4 CONTROL, ALGORITHM, MULTI-PARAMETRIC TOOLBOX, MULTI-
+ []
+
 [3
 
 ]
@@ -1244,33 +1249,64 @@ File: graphics-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics-eps-converted-to.pdf  used on input line 220.
 (pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
 [54 </Users/nikitaselyakh/Desktop/kursach/course/figure1-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure5-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure10-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure20-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/graphics-eps-converted-to.pdf>] [55]
-Overfull \hbox (261.75635pt too wide) in paragraph at lines 300--300
+Overfull \hbox (261.75635pt too wide) in paragraph at lines 302--302
 []    \T2A/cmtt/m/n/14.4 x(:,i+1) = F(h)*x(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b,t0+i*h,t0+(i+1)*h,'ArrayValued',true);[] 
  []
 
 
-Overfull \hbox (312.9149pt too wide) in paragraph at lines 300--300
+Overfull \hbox (312.9149pt too wide) in paragraph at lines 302--302
 []    \T2A/cmtt/m/n/14.4 x1(:,i+1) = F(h)*x1(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b+w(t),t0+i*h,t0+(i+1)*h,'ArrayValued',true);[] 
  []
 
 
-Overfull \hbox (100.97232pt too wide) in paragraph at lines 319--319
+Overfull \hbox (100.97232pt too wide) in paragraph at lines 321--321
 []        \T2A/cmtt/m/n/14.4 u1 = linprog(-ch(j:N),[],[],dh(j:N),g0,-L*ones(N-j+1,1),L*ones(N-j+1,1))[] 
  []
 
 
-Overfull \hbox (342.14836pt too wide) in paragraph at lines 319--319
+Overfull \hbox (342.14836pt too wide) in paragraph at lines 321--321
 []        \T2A/cmtt/m/n/14.4 x2(:,j+1) = F(h)*x2(:,j)+integral(@(t)u2(j)*F(t0+(j+1)*h-t)*b+w(t),t0+j*h,t0+(j+1)*h,'ArrayValued',true);[] 
  []
 
-) (/Users/nikitaselyakh/Desktop/kursach/course/conclusions.tex [56]) (/Users/nikitaselyakh/Desktop/kursach/course/bibliography.tex [57
+Package epstopdf Info: Source file: <primer2-1.eps>
+(epstopdf)                    date: 2020-05-19 20:57:53
+(epstopdf)                    size: 17895 bytes
+(epstopdf)             Output file: <primer2-1-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-19 21:38:56
+(epstopdf)                    size: 5257 bytes
+(epstopdf)             Command: <repstopdf --outfile=primer2-1-eps-converted-to.pdf primer2-1.eps>
+(epstopdf)             \includegraphics on input line 329.
+Package epstopdf Info: Output file is already uptodate.
+<primer2-1-eps-converted-to.pdf, id=292, 562.1pt x 421.575pt>
+File: primer2-1-eps-converted-to.pdf Graphic file (type pdf)
+<use primer2-1-eps-converted-to.pdf>
+Package pdftex.def Info: primer2-1-eps-converted-to.pdf  used on input line 329.
+(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+Package epstopdf Info: Source file: <primer2-3.eps>
+(epstopdf)                    date: 2020-05-19 20:57:11
+(epstopdf)                    size: 18326 bytes
+(epstopdf)             Output file: <primer2-3-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-19 21:38:57
+(epstopdf)                    size: 6285 bytes
+(epstopdf)             Command: <repstopdf --outfile=primer2-3-eps-converted-to.pdf primer2-3.eps>
+(epstopdf)             \includegraphics on input line 333.
+Package epstopdf Info: Output file is already uptodate.
+<primer2-3-eps-converted-to.pdf, id=293, 562.1pt x 421.575pt>
+File: primer2-3-eps-converted-to.pdf Graphic file (type pdf)
+<use primer2-3-eps-converted-to.pdf>
+Package pdftex.def Info: primer2-3-eps-converted-to.pdf  used on input line 333.
+(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (/Users/nikitaselyakh/Desktop/kursach/course/conclusions.tex [56] [57 </Users/nikitaselyakh/Desktop/kursach/course/primer2-1-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/primer2-3-eps-converted-to.pdf>]) (/Users/nikitaselyakh/Desktop/kursach/course/bibliography.tex [58
 
 ]
 Underfull \hbox (badness 3460) in paragraph at lines 12--13
 []\T2A/cmr/m/n/14.4 T. Gal and J. Nedoma. Multiparametric linear programming.
  []
 
-) [58
+) [59
 
 ] (/Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.aux)
 
@@ -1281,18 +1317,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18529 strings out of 492616
- 342334 string characters out of 6129481
- 407714 words of memory out of 5000000
- 22046 multiletter control sequences out of 15000+600000
+ 18539 strings out of 492616
+ 342686 string characters out of 6129481
+ 407725 words of memory out of 5000000
+ 22054 multiletter control sequences out of 15000+600000
  14785 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,21n,50p,1272b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on /Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.pdf (58 pages, 1448721 bytes).
+Output written on /Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.pdf (59 pages, 1455010 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
+ 383 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

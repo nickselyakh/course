@@ -234,15 +234,17 @@ end
     \begin{aligned}        
     & x_1(t_f) \to \min,\\
     & x_2(t_f) = 0,\\
-    \text{на траектори€х системы второго пор€дка}\\
+\end{aligned}
+\end{equation}
+на траектори€х системы второго пор€дка
+$$
     \begin{cases}
         \dot{x_1} = x_2,\\
         \dot{x_2} = -x_1 + u,
     \end{cases}
-    & x_1(t_0) = x_{10},
-    & x_2(t_0) = x_{20}
-\end{aligned}
-\end{equation}
+    x_1(t_0) = x_{10},\ 
+    x_2(t_0) = x_{20},
+$$
 с ограничени€ми $-L \le u \le L, \ t \in T = [t_0,\ t_f]$
 \\
 ћатрица A имеет вид:
@@ -318,3 +320,19 @@ end
     end
 \end{verbatim}
 
+–езультаты дл€ начального значени€ $x_0 = [1; -1]$ показаны на рисунке \ref{picture-primer}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.4\linewidth}
+      \includegraphics[width=\linewidth]{primer2-1.eps}
+      \caption{X}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\linewidth}
+      \includegraphics[width=\linewidth]{primer2-3.eps}
+      \caption{U}
+    \end{subfigure}
+    \caption{–езультаты}
+    \label{picture-primer}
+  \end{figure}
