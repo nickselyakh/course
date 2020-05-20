@@ -7,7 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 –ассмотрим возможности MPT при решении следующей задачи:
-\begin{equation}
+\begin{equation*}
     \begin{aligned}
         & x (t + 1) = \begin{bmatrix}
             1 & 1\\
@@ -21,7 +21,7 @@
             0 & 1
         \end{bmatrix}x(t)
     \end{aligned}
-\end{equation}
+\end{equation*}
 c ограничени€ми $-5 \le x \le 5$ и $-1 \le u \le 1$. –ассмотрим задачу MPC с горизонтом прогнозировани€ $N$ = 7, квадратичной нормой и весовыми матрицами $Q = \begin{bmatrix}
     1 & 0\\
     0 & 1
@@ -230,12 +230,12 @@ end
 –анее была рассмотрена теоретическа€ база по построению классической оптимальной обратной св€зи. ¬ данной главе проилюстриуем, как параметрическое программирование примен€етс€ в задачах синтеза оптимальной линейной системы.
 
 –ассмотрим следующую задачу:
-\begin{equation}
-    \begin{aligned}        
+\begin{equation*}
+    \begin{aligned}
     & x_1(t_f) \to \min,\\
     & x_2(t_f) = 0,\\
 \end{aligned}
-\end{equation}
+\end{equation*}
 на траектори€х системы второго пор€дка
 $$
     \begin{cases}
@@ -292,12 +292,16 @@ u0 = linprog(-ch',[],[],dh,g0,-L*ones(N,1),L*ones(N,1))
 x = zeros(2,N+1);
 x(:,1) = x0;
 for i = 1:N
-    x(:,i+1) = F(h)*x(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b,t0+i*h,t0+(i+1)*h,'ArrayValued',true);
+    x(:,i+1) = 
+    F(h)*x(:,i) + integral(@(t)u0(i)*F(t0+(i+1)*h-t)* b,
+    t0+i*h,t0+(i+1)*h,'ArrayValued',true);
 end
 x1 = zeros(2,N+1);
 x1(:,1) = x0;
 for i = 1:N
-    x1(:,i+1) = F(h)*x1(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b+w(t),t0+i*h,t0+(i+1)*h,'ArrayValued',true);
+    x1(:,i+1) = F(h)*x1(:,i)
+    + integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b+w(t),
+    t0+i*h,t0+(i+1)*h,'ArrayValued',true);
 end
 \end{verbatim}
 
@@ -311,10 +315,15 @@ end
         end
         tau = t0 + (j-1)*h;
         g0 = g-H*F(tf-tau)*x2(:,j);
-        u1 = linprog(-ch(j:N),[],[],dh(j:N),g0,-L*ones(N-j+1,1),L*ones(N-j+1,1))
+        u1 = 
+            linprog(-ch(j:N),[],[],dh(j:N),
+            g0,-L*ones(N-j+1,1),L*ones(N-j+1,1))
         u2(j) = u1(1);
             
-        x2(:,j+1) = F(h)*x2(:,j)+integral(@(t)u2(j)*F(t0+(j+1)*h-t)*b+w(t),t0+j*h,t0+(j+1)*h,'ArrayValued',true);
+        x2(:,j+1) = 
+            F(h)*x2(:,j)
+            + integral(@(t)u2(j)*F(t0+(j+1)*h-t)*b+w(t),
+            t0+j*h,t0+(j+1)*h,'ArrayValued',true);
         x(:,j+1)
         x2(:,j+1)
     end
@@ -327,11 +336,11 @@ end
     \centering
     \begin{subfigure}[b]{0.4\linewidth}
       \includegraphics[width=\linewidth]{primer2-1.eps}
-      \caption{X}
+      \caption{U}
     \end{subfigure}
     \begin{subfigure}[b]{0.4\linewidth}
       \includegraphics[width=\linewidth]{primer2-3.eps}
-      \caption{U}
+      \caption{X}
     \end{subfigure}
     \caption{–езультаты}
     \label{picture-primer}

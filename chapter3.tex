@@ -63,13 +63,13 @@ $$
 где $C_x, C_u, C_f, d_x, d_u, d^f$ —  ограничения на траекторию, управления и терминальное состояние.
 
 Перепишем \ref{yav-1} в виде задачи квадратичного программирования:
-\begin{equation} \label{yav-2}
+\begin{equation*} \label{yav-2}
     X := [x^T(t + 1 |\ t),\ \dots,\ x^T(t + N|\ t)]^T,
-\end{equation}
+\end{equation*}
 
-\begin{equation} \label{yav-3}
+\begin{equation*} \label{yav-3}
     U := [u^T(t + 1 |\ t),\ \dots,\ u^T(t + N|\ t)]^T,
-\end{equation}
+\end{equation*}
 
 \begin{equation} \label{yav-4}
     J(x(t),\ U) = x^T(t)Qx(t)+X^T\tilde{Q}X + U^T\tilde{R}U,
@@ -157,12 +157,12 @@ $$Gz \le w + sx, \ S = E + GH^{-1}А,Е$$
 Задача (\ref{yav-5}) строго выпуклая с допустимым множеством с непустойвнутренней частью, поэтому для нее выполняются условия регулярности Слейтера. Существует единственное оптимальное решение и оно характеризуется условиями Каруша-Куна-Такера.
 
 Явный MPC использует методы параметрического программирования для задачи (\ref{yav-5}) с параметром $x$.
-\begin{equation} \label{ch4-a}
+\begin{equation*} \label{ch4-a}
     Hz + G^T \lambda = 0
-\end{equation}
-\begin{equation} \label{ch4-b}
+\end{equation*}
+\begin{equation*} \label{ch4-b}
 \lambda_{i}(G_iz - w_i - s_ix) = 0, \ i = \overline{1, q}
-\end{equation}
+\end{equation*}
 \begin{equation} \label{ch4-c}
 \lambda_{i} \ge 0
 \end{equation}
@@ -311,19 +311,19 @@ $$
     \int_{\tau}^{t_f}u_1(t) + u_2(t)dt = \sum_{s = \overline{k, t_f - h}}h(u_1(s) + u_2(s) \to \min
 $$
 В результате преобразования мы привели задачу (\ref{3-2-1}) к следующему виду:
-\begin{equation} \label{3-2-2}
+\begin{equation*} \label{3-2-2}
     \begin{aligned}
         & \sum_{s = \overline{k, t_f - h}}h(u_1(s) + u_2(s) \to \min,\\
         & \dot{x} = Ax + Bu_1 - Bu_2.
     \end{aligned}
-\end{equation}
+\end{equation*}
 
 Задачу в классе дискретных управляющих воздействий можно свести к дискретной задаче оптимального управления. Для этого по формуле Коши запишем соотношение:
-\begin{equation}
+\begin{equation*}
     \begin{aligned}
         & x(s+h) = F(s+h, s)x(s) + \int_s^{s+h}F(s+h, \theta)b(\theta)u(\theta)d \theta =\\ & F(s + h, s)x(s) + \int_s^{s+h}F(s+h, \theta)b(\theta)d \theta u(s)
     \end{aligned}
-\end{equation}
+\end{equation*}
 Введем обозначения
 $$
     A_h = F(s + h, s)
@@ -337,14 +337,14 @@ $$
 $$
 
 Таким образом мы получаем, что исходня задача (\ref{3-2-1}) эквивалентна следующей задаче оптимального управления дискретной системы:
-\begin{equation} \label{3-2-3}
+\begin{equation*} \label{3-2-3}
     \begin{aligned}
         & \sum_{s = \overline{k, t_f - h}}h(u_1(s) + u_2(s) \to \min,\\
         &  x(s +h) = A_h(s)x(s) + b_h(s)u(s),\ s = \overline{k, tf-h},\\
         & x(\tau) = z, \ x(t_f) = 0,\\
         & 0 \le u_1(s) \le 1, \ 0 \le u_2(s) \le 1,\ s = \overline{k, tf-h}
     \end{aligned}
-\end{equation}
+\end{equation*}
 
 Вектор неизвестных: $(x, u1, u2)$
 
