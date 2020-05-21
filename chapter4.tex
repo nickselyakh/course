@@ -80,11 +80,15 @@ ctrl = MPCController(model,7);
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.4\linewidth}
-      \includegraphics[width=\linewidth]{u-mpc.eps}
+      \includegraphics[width=\linewidth]{pctr-u.eps}
       \caption{Управляющее воздействие}
     \end{subfigure}
     \begin{subfigure}[b]{0.4\linewidth}
-      \includegraphics[width=\linewidth]{controller-partition.eps}
+      \includegraphics[width=\linewidth]{pctr-x.eps}
+      \caption{Траектории X}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\linewidth}
+      \includegraphics[width=\linewidth]{pctr-expl.eps}
       \caption{Критические области и траектории замкнутой системы  для разных начальных значений}
     \end{subfigure}
     \caption{Результаты}
@@ -103,14 +107,7 @@ $$
         \dot{x_2} = -x_1 + u,
 $$
 
-\bigskip
-!!!!!!!!!!!!!!!!!!!
-
-А какие ограничения в задаче??? На u и на x
-
-
-!!!!!!!!!!!!!!!!!!!
-\bigskip
+с ограничениями $-10 \le x \le 10$ и $-1 \le u(t) \le 1,\ t = 0,1, \cdots$. 
 
 Параметрам присвоим значения: $t_0 = 0, t_f = 10$, число моментов квантования положим равным $N=20$, тогда период квантования $h=0.5$.
 
@@ -123,17 +120,17 @@ sysd = c2d(sys,tf/N,'zoh');
 
 В результате будут получены следующие матрицы
 
-\bigskip
-!!!!!!!!!!!!!!!!!!!
-
 $$
-    A_d = ......................
-    B_d = ..................
+    A_d = \begin{bmatrix}
+        0.8776 & 0.4794\\
+        -0.4794 &  0.8776\\
+    \end{bmatrix}
+    B_d = \begin{bmatrix}
+        0.1224 \\
+        0.4794 \\
+    \end{bmatrix}
     $$
 описывающие дискретную систему $x(t+1)  = A_d x(t) + B_d u(t)$, $x(0)=0$, $t=0, 1, 2, \ldots$.
-!!!!!!!!!!!!!!!!!!!
-\bigskip
-
 
 
 В МРТ  нужно задать все параметры задачи, чтобы передать их в $mpt constructMatrices$, которая  представляет собой функцию, на вход которой приходят параметры $probStruc$t и $sysStruct$.
@@ -206,42 +203,36 @@ end
 
 На рис. \ref{4-img-1}) приведены результаты работы МРТ --- критические области для моментов $\tau = 0$, $\tau = 2.5$, $\tau = 5$, $\tau = 9.5$.
 
-% N = 20
-% \includegraphics[width=0.8\textwidth]{figure1.eps}\\
-% N = 15
-% \includegraphics[width=0.8\textwidth]{figure5.eps}\\
-% N = 10
-% \includegraphics[width=0.8\textwidth]{figure10.eps}\\
-% N = 1
-% \includegraphics[width=0.8\textwidth]{figure20.eps}\\
-% X и U
-% \includegraphics[width=0.8\textwidth]{graphics.eps}
-
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.48\linewidth}
     \includegraphics[width=1\textwidth]{figure1.eps}
-      \caption{N = 20}
+      \caption{N = 20, $\tau = 0$}
     \end{subfigure}
     \begin{subfigure}[b]{0.48\linewidth}
         \includegraphics[width=1\textwidth]{figure5.eps}
-      \caption{N = 15}
+      \caption{N = 15, $\tau = 2.5$}
     \end{subfigure}
     \begin{subfigure}[b]{0.48\linewidth}
     \includegraphics[width=1\textwidth]{figure10.eps}
-      \caption{N = 10}
+      \caption{N = 10, $\tau = 5$}
     \end{subfigure}
     \begin{subfigure}[b]{0.48\linewidth}
         \includegraphics[width=1\textwidth]{figure20.eps}
-      \caption{N = 1}
+      \caption{N = 1, $\tau = 9.5$}
     \end{subfigure}
-    \begin{subfigure}[b]{0.4\linewidth}
-        \includegraphics[width=1\textwidth]{graphics.eps}
+    \begin{subfigure}[b]{0.48\linewidth}
+        \includegraphics[width=1\textwidth]{graphics-42.eps}
       \caption{X и U}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\linewidth}
+        \includegraphics[width=1\textwidth]{x1x2.eps}
+      \caption{$X_1, \ X_2$}
     \end{subfigure}
     \caption{Результаты}
     \label{4-img-1}
 \end{figure}
+\clearpage
 
 
 \bigskip

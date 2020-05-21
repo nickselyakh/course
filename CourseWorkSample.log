@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.24)  20 MAY 2020 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.24)  21 MAY 2020 22:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -727,9 +727,6 @@ LaTeX Warning: Label `chap2' multiply defined.
 
 LaTeX Warning: Label `2sec:parametric-programming-mpc' multiply defined.
 
-
-LaTeX Warning: Label `2sec:parametric-programming-mpc' multiply defined.
-
 )
 \openout1 = `CourseWorkSample.aux'.
 
@@ -1230,52 +1227,66 @@ Package refcheck Warning: Unused label `2sec:parametric-programming-mpc' on inpu
 [50
 
 ]
-Package epstopdf Info: Source file: <u-mpc.eps>
-(epstopdf)                    date: 2020-05-16 16:55:26
-(epstopdf)                    size: 15675 bytes
-(epstopdf)             Output file: <u-mpc-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-16 18:17:49
-(epstopdf)                    size: 5961 bytes
-(epstopdf)             Command: <repstopdf --outfile=u-mpc-eps-converted-to.pdf u-mpc.eps>
-(epstopdf)             \includegraphics on input line 84.
+Package epstopdf Info: Source file: <pctr-u.eps>
+(epstopdf)                    date: 2020-05-21 19:36:17
+(epstopdf)                    size: 16438 bytes
+(epstopdf)             Output file: <pctr-u-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-21 19:36:23
+(epstopdf)                    size: 6022 bytes
+(epstopdf)             Command: <repstopdf --outfile=pctr-u-eps-converted-to.pdf pctr-u.eps>
+(epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
-<u-mpc-eps-converted-to.pdf, id=220, 562.1pt x 421.575pt>
-File: u-mpc-eps-converted-to.pdf Graphic file (type pdf)
-<use u-mpc-eps-converted-to.pdf>
-Package pdftex.def Info: u-mpc-eps-converted-to.pdf  used on input line 84.
+<pctr-u-eps-converted-to.pdf, id=220, 562.1pt x 421.575pt>
+File: pctr-u-eps-converted-to.pdf Graphic file (type pdf)
+<use pctr-u-eps-converted-to.pdf>
+Package pdftex.def Info: pctr-u-eps-converted-to.pdf  used on input line 83.
 (pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
-Package epstopdf Info: Source file: <controller-partition.eps>
-(epstopdf)                    date: 2020-05-16 15:57:45
-(epstopdf)                    size: 70108 bytes
-(epstopdf)             Output file: <controller-partition-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-16 18:17:50
-(epstopdf)                    size: 59960 bytes
-(epstopdf)             Command: <repstopdf --outfile=controller-partition-eps-converted-to.pdf controller-partition.eps>
-(epstopdf)             \includegraphics on input line 88.
+Package epstopdf Info: Source file: <pctr-x.eps>
+(epstopdf)                    date: 2020-05-21 19:34:23
+(epstopdf)                    size: 15859 bytes
+(epstopdf)             Output file: <pctr-x-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-21 19:34:49
+(epstopdf)                    size: 4763 bytes
+(epstopdf)             Command: <repstopdf --outfile=pctr-x-eps-converted-to.pdf pctr-x.eps>
+(epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
-<controller-partition-eps-converted-to.pdf, id=221, 562.1pt x 421.575pt>
-File: controller-partition-eps-converted-to.pdf Graphic file (type pdf)
-<use controller-partition-eps-converted-to.pdf>
-Package pdftex.def Info: controller-partition-eps-converted-to.pdf  used on input line 88.
+<pctr-x-eps-converted-to.pdf, id=221, 562.1pt x 421.575pt>
+File: pctr-x-eps-converted-to.pdf Graphic file (type pdf)
+<use pctr-x-eps-converted-to.pdf>
+Package pdftex.def Info: pctr-x-eps-converted-to.pdf  used on input line 87.
+(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+Package epstopdf Info: Source file: <pctr-expl.eps>
+(epstopdf)                    date: 2020-05-21 19:31:44
+(epstopdf)                    size: 68790 bytes
+(epstopdf)             Output file: <pctr-expl-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-21 19:33:18
+(epstopdf)                    size: 59239 bytes
+(epstopdf)             Command: <repstopdf --outfile=pctr-expl-eps-converted-to.pdf pctr-expl.eps>
+(epstopdf)             \includegraphics on input line 91.
+Package epstopdf Info: Output file is already uptodate.
+<pctr-expl-eps-converted-to.pdf, id=222, 562.1pt x 421.575pt>
+File: pctr-expl-eps-converted-to.pdf Graphic file (type pdf)
+<use pctr-expl-eps-converted-to.pdf>
+Package pdftex.def Info: pctr-expl-eps-converted-to.pdf  used on input line 91.
 (pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
 
 
-Package refcheck Warning: Unused label `2sec:parametric-programming-mpc' on input line 95.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 97--98
-[]\T2A/cmr/m/n/14.4 Для ре-а-ли-за-ции ре-ше-ния за-да-чи ис-поль-зу-ет-ся MPT3 Toolbox для
+Package refcheck Warning: Unused label `2sec:parametric-programming-mpc' on input line 98.
+
+[51] [52 </Users/nikitaselyakh/Desktop/kursach/course/pctr-u-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/pctr-x-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/pctr-expl-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 175--177
+[]\T2A/cmr/m/n/14.4 Далее нуж-но на ос-но-ва-нии $\OML/cmm/m/it/14.4 mptconstructMatrices$ \T2A/cmr/m/n/14.4 по-смот-реть
  []
 
-[51 </Users/nikitaselyakh/Desktop/kursach/course/u-mpc-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/controller-partition-eps-converted-to.pdf>] [52] [53]
 
-Package refcheck Warning: Unused label `2sec:results' on input line 186.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
+Underfull \hbox (badness 1072) in paragraph at lines 175--177
+\T2A/cmr/m/n/14.4 класс $\OML/cmm/m/it/14.4 Opt$\T2A/cmr/m/n/14.4 , ко-то-рый ин-кап-су-ли-ру-ет ин-фор-ма-цию и ре-ше-ния для за-дач
  []
 
+[53]
 Package epstopdf Info: Source file: <figure1.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 191516 bytes
@@ -1283,13 +1294,13 @@ Package epstopdf Info: Source file: <figure1.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 173431 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure1-eps-converted-to.pdf figure1.eps>
-(epstopdf)             \includegraphics on input line 204.
+(epstopdf)             \includegraphics on input line 209.
 Package epstopdf Info: Output file is already uptodate.
-<figure1-eps-converted-to.pdf, id=246, 562.1pt x 421.575pt>
+<figure1-eps-converted-to.pdf, id=252, 562.1pt x 421.575pt>
 File: figure1-eps-converted-to.pdf Graphic file (type pdf)
 <use figure1-eps-converted-to.pdf>
-Package pdftex.def Info: figure1-eps-converted-to.pdf  used on input line 204.
-(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+Package pdftex.def Info: figure1-eps-converted-to.pdf  used on input line 209.
+(pdftex.def)             Requested size: 232.17242pt x 174.12697pt.
 Package epstopdf Info: Source file: <figure5.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 171166 bytes
@@ -1297,13 +1308,13 @@ Package epstopdf Info: Source file: <figure5.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 153807 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure5-eps-converted-to.pdf figure5.eps>
-(epstopdf)             \includegraphics on input line 208.
+(epstopdf)             \includegraphics on input line 213.
 Package epstopdf Info: Output file is already uptodate.
-<figure5-eps-converted-to.pdf, id=247, 562.1pt x 421.575pt>
+<figure5-eps-converted-to.pdf, id=253, 562.1pt x 421.575pt>
 File: figure5-eps-converted-to.pdf Graphic file (type pdf)
 <use figure5-eps-converted-to.pdf>
-Package pdftex.def Info: figure5-eps-converted-to.pdf  used on input line 208.
-(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+Package pdftex.def Info: figure5-eps-converted-to.pdf  used on input line 213.
+(pdftex.def)             Requested size: 232.17242pt x 174.12697pt.
 Package epstopdf Info: Source file: <figure10.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 119576 bytes
@@ -1311,13 +1322,13 @@ Package epstopdf Info: Source file: <figure10.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 15995 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure10-eps-converted-to.pdf figure10.eps>
-(epstopdf)             \includegraphics on input line 212.
+(epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
-<figure10-eps-converted-to.pdf, id=248, 562.1pt x 421.575pt>
+<figure10-eps-converted-to.pdf, id=254, 562.1pt x 421.575pt>
 File: figure10-eps-converted-to.pdf Graphic file (type pdf)
 <use figure10-eps-converted-to.pdf>
-Package pdftex.def Info: figure10-eps-converted-to.pdf  used on input line 212.
-(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+Package pdftex.def Info: figure10-eps-converted-to.pdf  used on input line 217.
+(pdftex.def)             Requested size: 232.17242pt x 174.12697pt.
 Package epstopdf Info: Source file: <figure20.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 16603 bytes
@@ -1325,31 +1336,75 @@ Package epstopdf Info: Source file: <figure20.eps>
 (epstopdf)                    date: 2020-03-07 22:36:03
 (epstopdf)                    size: 5211 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure20-eps-converted-to.pdf figure20.eps>
-(epstopdf)             \includegraphics on input line 216.
+(epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
-<figure20-eps-converted-to.pdf, id=249, 562.1pt x 421.575pt>
+<figure20-eps-converted-to.pdf, id=255, 562.1pt x 421.575pt>
 File: figure20-eps-converted-to.pdf Graphic file (type pdf)
 <use figure20-eps-converted-to.pdf>
-Package pdftex.def Info: figure20-eps-converted-to.pdf  used on input line 216.
-(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
-Package epstopdf Info: Source file: <graphics.eps>
-(epstopdf)                    date: 2020-03-07 22:36:03
-(epstopdf)                    size: 24333 bytes
-(epstopdf)             Output file: <graphics-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-07 22:36:03
-(epstopdf)                    size: 6988 bytes
-(epstopdf)             Command: <repstopdf --outfile=graphics-eps-converted-to.pdf graphics.eps>
-(epstopdf)             \includegraphics on input line 220.
+Package pdftex.def Info: figure20-eps-converted-to.pdf  used on input line 221.
+(pdftex.def)             Requested size: 232.17242pt x 174.12697pt.
+Package epstopdf Info: Source file: <graphics-42.eps>
+(epstopdf)                    date: 2020-05-21 22:34:53
+(epstopdf)                    size: 22561 bytes
+(epstopdf)             Output file: <graphics-42-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-21 22:11:31
+(epstopdf)                    size: 6588 bytes
+(epstopdf)             Command: <repstopdf --outfile=graphics-42-eps-converted-to.pdf graphics-42.eps>
+(epstopdf)             \includegraphics on input line 225.
+runsystem(repstopdf --outfile=graphics-42-eps-converted-to.pdf graphics-42.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <graphics-42-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-21 22:34:57
+(epstopdf)                    size: 6592 bytes.
+<graphics-42-eps-converted-to.pdf, id=256, 601.24625pt x 473.77pt>
+File: graphics-42-eps-converted-to.pdf Graphic file (type pdf)
+<use graphics-42-eps-converted-to.pdf>
+Package pdftex.def Info: graphics-42-eps-converted-to.pdf  used on input line 225.
+(pdftex.def)             Requested size: 232.17242pt x 182.94781pt.
+Package epstopdf Info: Source file: <x1x2.eps>
+(epstopdf)                    date: 2020-05-21 22:25:40
+(epstopdf)                    size: 16577 bytes
+(epstopdf)             Output file: <x1x2-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-21 22:26:23
+(epstopdf)                    size: 5847 bytes
+(epstopdf)             Command: <repstopdf --outfile=x1x2-eps-converted-to.pdf x1x2.eps>
+(epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
-<graphics-eps-converted-to.pdf, id=250, 562.1pt x 421.575pt>
-File: graphics-eps-converted-to.pdf Graphic file (type pdf)
-<use graphics-eps-converted-to.pdf>
-Package pdftex.def Info: graphics-eps-converted-to.pdf  used on input line 220.
-(pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
+<x1x2-eps-converted-to.pdf, id=257, 562.1pt x 421.575pt>
+File: x1x2-eps-converted-to.pdf Graphic file (type pdf)
+<use x1x2-eps-converted-to.pdf>
+Package pdftex.def Info: x1x2-eps-converted-to.pdf  used on input line 229.
+(pdftex.def)             Requested size: 232.17242pt x 174.12697pt.
 
-Package refcheck Warning: Unused label `2sec:parametric-programming-mpc' on input line 227.
 
-[54 </Users/nikitaselyakh/Desktop/kursach/course/figure1-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure5-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure10-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure20-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/graphics-eps-converted-to.pdf>] [55]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[54] [55 </Users/nikitaselyakh/Desktop/kursach/course/figure1-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure5-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure10-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/figure20-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/graphics-42-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/x1x2-eps-converted-to.pdf>]
+
+Package refcheck Warning: Unlabelled equation (4.2) on input line 259.
+
+[56
+
+]
+Overfull \hbox (261.75635pt too wide) in paragraph at lines 323--323
+[]    \T2A/cmtt/m/n/14.4 x(:,i+1) = F(h)*x(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b,t0+i*h,t0+(i+1)*h,'ArrayValued',true);[] 
+ []
+
+
+Overfull \hbox (312.9149pt too wide) in paragraph at lines 323--323
+[]    \T2A/cmtt/m/n/14.4 x1(:,i+1) = F(h)*x1(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b+w(t),t0+i*h,t0+(i+1)*h,'ArrayValued',true);[] 
+ []
+
+
+Overfull \hbox (100.97232pt too wide) in paragraph at lines 342--342
+[]        \T2A/cmtt/m/n/14.4 u1 = linprog(-ch(j:N),[],[],dh(j:N),g0,-L*ones(N-j+1,1),L*ones(N-j+1,1))[] 
+ []
+
+
+Overfull \hbox (342.14836pt too wide) in paragraph at lines 342--342
+[]        \T2A/cmtt/m/n/14.4 x2(:,j+1) = F(h)*x2(:,j)+integral(@(t)u2(j)*F(t0+(j+1)*h-t)*b+w(t),t0+j*h,t0+(j+1)*h,'ArrayValued',true);[] 
+ []
+
 Package epstopdf Info: Source file: <primer2-1.eps>
 (epstopdf)                    date: 2020-05-19 20:57:53
 (epstopdf)                    size: 17895 bytes
@@ -1357,12 +1412,12 @@ Package epstopdf Info: Source file: <primer2-1.eps>
 (epstopdf)                    date: 2020-05-19 21:38:56
 (epstopdf)                    size: 5257 bytes
 (epstopdf)             Command: <repstopdf --outfile=primer2-1-eps-converted-to.pdf primer2-1.eps>
-(epstopdf)             \includegraphics on input line 338.
+(epstopdf)             \includegraphics on input line 350.
 Package epstopdf Info: Output file is already uptodate.
-<primer2-1-eps-converted-to.pdf, id=288, 562.1pt x 421.575pt>
+<primer2-1-eps-converted-to.pdf, id=307, 562.1pt x 421.575pt>
 File: primer2-1-eps-converted-to.pdf Graphic file (type pdf)
 <use primer2-1-eps-converted-to.pdf>
-Package pdftex.def Info: primer2-1-eps-converted-to.pdf  used on input line 338.
+Package pdftex.def Info: primer2-1-eps-converted-to.pdf  used on input line 350.
 (pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
 Package epstopdf Info: Source file: <primer2-3.eps>
 (epstopdf)                    date: 2020-05-19 20:57:11
@@ -1371,40 +1426,43 @@ Package epstopdf Info: Source file: <primer2-3.eps>
 (epstopdf)                    date: 2020-05-19 21:38:57
 (epstopdf)                    size: 6285 bytes
 (epstopdf)             Command: <repstopdf --outfile=primer2-3-eps-converted-to.pdf primer2-3.eps>
-(epstopdf)             \includegraphics on input line 342.
+(epstopdf)             \includegraphics on input line 354.
 Package epstopdf Info: Output file is already uptodate.
-<primer2-3-eps-converted-to.pdf, id=289, 562.1pt x 421.575pt>
+<primer2-3-eps-converted-to.pdf, id=308, 562.1pt x 421.575pt>
 File: primer2-3-eps-converted-to.pdf Graphic file (type pdf)
 <use primer2-3-eps-converted-to.pdf>
-Package pdftex.def Info: primer2-3-eps-converted-to.pdf  used on input line 342.
+Package pdftex.def Info: primer2-3-eps-converted-to.pdf  used on input line 354.
 (pdftex.def)             Requested size: 193.47578pt x 145.10258pt.
- [56]) (/Users/nikitaselyakh/Desktop/kursach/course/conclusions.tex [57 </Users/nikitaselyakh/Desktop/kursach/course/primer2-1-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/primer2-3-eps-converted-to.pdf>]) (/Users/nikitaselyakh/Desktop/kursach/course/bibliography.tex [58
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (/Users/nikitaselyakh/Desktop/kursach/course/conclusions.tex [57] [58 </Users/nikitaselyakh/Desktop/kursach/course/primer2-1-eps-converted-to.pdf> </Users/nikitaselyakh/Desktop/kursach/course/primer2-3-eps-converted-to.pdf>]) (/Users/nikitaselyakh/Desktop/kursach/course/bibliography.tex [59
 
 ]
-Underfull \hbox (badness 3460) in paragraph at lines 12--13
-[]\T2A/cmr/m/n/14.4 T. Gal and J. Nedoma. Multiparametric linear programming.
+Underfull \hbox (badness 1546) in paragraph at lines 6--7
+[]\T2A/cmr/m/n/14.4 Hazewinkel, M. Pontryagin maximum principle. Encyclopedia of
  []
 
-[59
+) [60
 
-]) [60] (/Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.aux)
+] (/Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18759 strings out of 492616
- 345114 string characters out of 6129481
- 410387 words of memory out of 5000000
- 22266 multiletter control sequences out of 15000+600000
- 16924 words of font info for 42 fonts, out of 8000000 for 9000
+ 18795 strings out of 492616
+ 345646 string characters out of 6129481
+ 410383 words of memory out of 5000000
+ 22292 multiletter control sequences out of 15000+600000
+ 21569 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,21n,50p,1272b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on /Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.pdf (60 pages, 1418601 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
+Output written on /Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.pdf (60 pages, 1433426 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
+ 401 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
