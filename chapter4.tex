@@ -235,125 +235,70 @@ end
 \clearpage
 
 
-\bigskip
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Далее перейдем к решению задачи, которая была рассмотрена выше без изпользования пакета MPT, затем сравним полученные резултаты.
 
-Тут постановку не надо, надо решить ту же задачу для сравнения. Или эту решить с помощью МРТ, а то я не понимаю, к чему такой пример.
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-\bigskip
-
-\bigskip
-
-
-
-Ранее была рассмотрена теоретическая база по построению классической оптимальной обратной связи. В данной главе проилюстриуем, как параметрическое программирование применяется в задачах синтеза оптимальной линейной системы.
-
-Рассмотрим следующую задачу:
-\begin{equation}
-    \begin{aligned}
-    & x_1(t_f) \to \min,\\
-    & x_2(t_f) = 0,\\
-\end{aligned}
-\end{equation}
-на траекториях системы второго порядка
-$$
-    \begin{cases}
-        \dot{x_1} = x_2,\\
-        \dot{x_2} = -x_1 + u,
-    \end{cases}
-    x_1(t_0) = x_{10},\
-    x_2(t_0) = x_{20},
-$$
-с ограничениями $-L \le u \le L, \ t \in T = [t_0,\ t_f]$
-\\
-Матрица A имеет вид:
-$$
-A = \begin{bmatrix}
-    0 & 1\\
-    -1 & 0
-\end{bmatrix}
-$$
-Вектром $b$ выглядит следующим образом:
-$$
-b = \begin{bmatrix}
-    0 \\
-    1
-\end{bmatrix}
-$$
-Матрица $H$:
-$$
-H = \begin{bmatrix}
-    0 \\
-    1
-\end{bmatrix}
-$$
-
-Параметрам задачи присвоим значения: $t_0 = 0,\ t_f = 10$.
-Будем использовать дискретные управляющие воздействия с шагом $h = \frac{t_f - t_0}{100}$.
-Остальные параметры в программе зададим таким образом:
-
-$c_h, d_h$ на каждом шаге в matlab вычисляется процедурой integral в Matlab, которое высчитывается в цикле для каждого шага:
-
+Задача будет решаться стандартной процедурой $linprog$ пакета Matlab:
 \begin{verbatim}
-for i = 1:N
-    ch(i) = integral(C,t0+h*(i-1),t0+h*i,'ArrayValued',true);
-    dh(i) = integral(d,t0+h*(i-1),t0+h*i,'ArrayValued',true);
-end
+    u0 = linprog([ch', ch'],[],[],[dh,-dh],g0,zeros(2*N,1),L*ones(2*N,1)),
 \end{verbatim}
-
-$u_0$, в свою очередь, вычисляется с помощью процедуры linprog:
+где $c_h$ в данной задаче будет вектор, состоящий из $h$, а $g_0$ будет вычисляются по формуле:
+$$
+    g_0 = g - HF(t_f, t_0)x_0
+$$
+Зададим это в программе с помощью следующих команд: 
 \begin{verbatim}
-u0 = linprog(-ch',[],[],dh,g0,-L*ones(N,1),L*ones(N,1))
+    ch = h*ones(1,N);
+    g0 = g-H*F(tf-t0)*x0.
 \end{verbatim}
-
-Далее рассчитаем $x$:
+$g_0$ будет вектором:
+$$
+    g_0 = \begin{bmatrix}
+        -2.7201\\
+        4.1954
+    \end{bmatrix}
+$$
+$d_h$, в свою очередь, будет заполняться с помощью цикла, высчитывая интеграл $\int_{t}^{t+h} HF(t_f - t)b$ на каждом шаге:
 \begin{verbatim}
-x = zeros(2,N+1);
-x(:,1) = x0;
-for i = 1:N
-    x(:,i+1) = F(h)*x(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b,t0+i*h,t0+(i+1)*h,'ArrayValued',true);
-end
-x1 = zeros(2,N+1);
-x1(:,1) = x0;
-for i = 1:N
-    x1(:,i+1) = F(h)*x1(:,i)+integral(@(t)u0(i)*F(t0+(i+1)*h-t)*b+w(t),t0+i*h,t0+(i+1)*h,'ArrayValued',true);
-end
-\end{verbatim}
-
-
-Затем на определенном промежутке времени добавим возмущение $w$ и придет к ответу с помощью известных уже нам процедур:
-\begin{verbatim}
-    for j = 1:N
-        j
-        if j>90
-            w = @(t)0*cos(3*t);
-        end
-        tau = t0 + (j-1)*h;
-        g0 = g-H*F(tf-tau)*x2(:,j);
-        u1 = linprog(-ch(j:N),[],[],dh(j:N),g0,-L*ones(N-j+1,1),L*ones(N-j+1,1))
-        u2(j) = u1(1);
-
-        x2(:,j+1) = F(h)*x2(:,j)+integral(@(t)u2(j)*F(t0+(j+1)*h-t)*b+w(t),t0+j*h,t0+(j+1)*h,'ArrayValued',true);
-        x(:,j+1)
-        x2(:,j+1)
+    for i = 1:N
+        dh(:,i) = integral(d,t0+h*(i-1),t0+h*i,'ArrayValued',true);
     end
 \end{verbatim}
+где $d$ --- подинтегральная функция:
+\begin{verbatim}
+    d = @(t)H*F(tf-t)*b;
+\end{verbatim}.
+Матрица $F$ задается функцией:
+\begin{verbatim}
+    F = @(t)expm(A*t);
+\end{verbatim}
+и состоит из следующих значений:
+$$
+    F = \begin{bmatrix}
+        0.8776 & 0.4794\\
+        -0.4794 & 0.8776
+    \end{bmatrix}
+$$
+И, наконец, $x$ будем считать на каждом шаге, добавляя возмущение $w$, когда $i > N/2$:
+\begin{verbatim}
+    x(:,i+1) = F(h)*x2(:,i) +
+        integral(@(t)u2(i)*F(t0+(i+1)*h-t)*b + w,
+        t0 + i*h, t0+(i+1)*h,'ArrayValued',true);
+\end{verbatim}
 
-Результаты для начального значения $x_0 = [1; -1]$ показаны на рисунке \ref{picture-primer}
-
-
+График оптимальной программы $u^0(t)$ и фазовый портрет оптимальной траектории $x^0(t)$ на плоскости $x_1, x_2$ показаны на рисунке \ref{picture-primer}
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.4\linewidth}
-      \includegraphics[width=\linewidth]{primer2-1.eps}
-      \caption{X}
-    \end{subfigure}
+        \includegraphics[width=\linewidth]{primer2-u.eps}
+        \caption{Оптимальная программа}
+      \end{subfigure}
     \begin{subfigure}[b]{0.4\linewidth}
-      \includegraphics[width=\linewidth]{primer2-3.eps}
-      \caption{U}
+      \includegraphics[width=\linewidth]{picture2-x.eps}
+      \caption{Фазовый портрет оптимальной траектории}
     \end{subfigure}
     \caption{Результаты}
     \label{picture-primer}
-  \end{figure} 
+  \end{figure}   
+\newpage
+
+Таким образом можем заметить, что полученные результаты совпадают с методом, который использует в своей основе возможности MPT для решения подобного рода задач, описанный выше.
