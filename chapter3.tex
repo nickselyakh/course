@@ -253,12 +253,12 @@ $$
 
 “аким образом, в классе дискретных оптимальных управлений получаем:
 $$
-    \int_{\tau}^{t_f}u_1(t) + u_2(t)dt = \sum_{s \in T_h(\tau)}h(u_1(s) + u_2(s) \to \min
+    \int_{\tau}^{t_f}u_1(t) + u_2(t)dt = \sum_{s \in T_h(\tau)}h(u_1(s) + u_2(s)) \to \min
 $$
 ¬ результате преобразовани€ мы привели задачу (\ref{3-2-1}) к следующему виду:
 \begin{equation*} \label{3-2-2}
     \begin{aligned}
-        & \sum_{s \in T_h(\tau)}h(u_1(s) + u_2(s) \to \min,\\
+        & \sum_{s \in T_h(\tau)}h(u_1(s) + u_2(s)) \to \min,\\
         & \dot{x} = Ax + Bu_1 - Bu_2,  \ x(\tau) = z, \\
         & x(t_f) = 0, \\ 
         & 0\le u_1(s)\le L, \ 0\le u_1(s)\le L, \  s\in T_h(\tau).
@@ -268,7 +268,7 @@ $$
 «адачу в классе дискретных управл€ющих воздействий можно свести к дискретной задаче оптимального управлени€. ƒл€ этого по формуле  оши запишем соотношение:
 \begin{equation*}
     \begin{aligned}
-        & x(s+h) = F(s+h, s)x(s) + \int_s^{s+h}F(s+h, \theta)b(\theta)u(\theta)d \theta =\\ & F(s + h, s)x(s) + \int_s^{s+h}F(s+h, \theta)b(\theta)d \theta u(s)
+        & x(s+h) = F(s+h, s)x(s) + \int_s^{s+h}F(s+h, \theta)b(\theta)(u_1(\theta) - u_2(\theta))d \theta =\\ & F(s + h, s)x(s) + \int_s^{s+h}F(s+h, \theta)b(\theta)d \theta (u_1(s) - u_2(s))
     \end{aligned}
 \end{equation*}
 ¬ведем обозначени€
@@ -276,25 +276,25 @@ $$
     A_h = F(s + h, s)
 $$
 $$
-    b_h = \int_{s}^{s+h}F(s+h, \theta)b(\theta)d\theta
+    B_h = \int_{s}^{s+h}F(s+h, \theta)b(\theta)d\theta
 $$
 
 ¬ результате $x(s + h)$ будет представлен в следующем виде:
 $$
-    x(s +h) = A_h(s)x(s) + b_h(s)u(s),\ s = \overline{k, tf-h}
+    x(s +h) = A_h(s)x(s) + B_h(s) (u_1(s) - u_2(s)),\ s = \overline{k, tf-h}
 $$
 
 “аким образом мы получаем, что исходн€ задача (\ref{3-2-1}) эквивалентна следующей задаче оптимального управлени€ дискретной системы:
 \begin{equation*} \label{3-2-3}
     \begin{aligned}
-        & \sum_{s \in T_h(\tau)}h(u_1(s) + u_2(s)) \to \min,\\
-        &  x(s +h) = A_h(s)x(s) + b_h(s)u(s),\ s = \overline{k, tf-h},\\
+        & \sum_{s \in T_h(\tau)} h(u_1(s) + u_2(s)) \to \min,\\
+        &  x(s +h) = A_h(s)x(s) + B_h(s) (u_1(s) - u_2(s)),\ s = \overline{k, tf-h},\\
         & x(\tau) = z, \ x(t_f) = 0,\\
         & 0 \le u_1(s) \le 1, \ 0 \le u_2(s) \le 1,\ s = \overline{k, tf-h}
     \end{aligned}
 \end{equation*}
 
-¬ектор неизвестных: $(x, u1, u2)$
+% ¬ектор неизвестных: $(x, u1, u2)$
 
 ѕримем $\tau = kh$ и распишем получившиес€ матрицы в блочном виде:
 $$
@@ -347,47 +347,47 @@ $$
 
 
 \begin{equation*}
-    x(t_f) = F(t_f, t_0)x_0 + \int_{t_0}^{t_f}F(t_f, \theta)b(\theta)u(\theta)d\theta.
+    x(t_f) = F(t_f, t_0)x_0 + \int_{t_0}^{t_f}F(t_f, \theta)b(\theta)(u_1(\theta) - u_2(\theta))d\theta.
 \end{equation*}
 
 ¬ силу дискретности управл€ющего воздействи€, интеграл на промежутке $T = [t_0, t_f]$ представим в виде суммы итегралов на промежутках $[s,s+h],\ s \in T_h$.
 \begin{equation*}
     \begin{aligned}
-        & x(t_f) = F(t_f, t_0)x_0 + \sum_{s=t_0}^{t_f-h} \int_{s}^{s+h}F(t_f, \theta)b(\theta)u(\theta)d\theta \\
-        & = F(t_f, t_0)x_0 + \sum_{s \in T_h}\int_{s}^{s+h}F(t_f, \theta)b(\theta)d\theta u(s).
+        & x(t_f) = F(t_f, t_0)x_0 + \sum_{s=t_0}^{t_f-h} \int_{s}^{s+h}F(t_f, \theta)b(\theta)(u_1(\theta) - u_2(\theta))d\theta \\
+        & = F(t_f, t_0)x_0 + \sum_{s \in T_h}\int_{s}^{s+h}F(t_f, \theta)b(\theta)d\theta (u_1(s) - u_2(s)).
     \end{aligned}
 \end{equation*}
 
  ритерий качества будет иметь вид
 \begin{equation*}
     \begin{aligned}
-        & c^{'}x(t_f) = c^{'}F(t_f, t_0)x_0 + \sum_{s \in T_h}\int_{s}^{s+h} c^{'}F(t_f, \theta)b(\theta)d\theta u(s) \\
-        = c^{'}F(t_f, t_0)x_0 +  \sum_{s \in T_h}c_h(s)u(s),
+        & \int_{t_0}^{t_f}u_1(\theta) + u_2(\theta)d\theta = \sum_{s \in T_h}h(u_1(s) + u_2(s))
     \end{aligned}
 \end{equation*}
-где $c_h(s) = \int_{s}^{s+h} c^{'}F(t_f, \theta)b(\theta)d\theta$.
+
+–аспишем терминальные ограничени€ в виде:
 
 \begin{equation*}
-    Hx(t_f) = HF(t_f, t_0)x_0 +  \sum_{s \in T_h}\int_{s}^{s+h} HF(t_f, \theta)b(\theta)d\theta u(s),
+   x(t_f) = F(t_f, t_0)x_0 +  \sum_{s \in T_h}\int_{s}^{s+h} F(t_f, \theta)b(\theta)d\theta (u_1(s) - u_2(s)),
 \end{equation*}
 ѕроизведем замену
 \begin{equation*}
-    d_h(s) = \int_{s}^{s+h} HF(t_f, \theta)b(\theta)d\theta,
+    d_h(s) = \int_{s}^{s+h} F(t_f, \theta)b(\theta)d\theta,
 \end{equation*}
-и примем
+примем
 \begin{equation*}
-    Hx(t_f) = g,
+    x(t_f) = 0,
 \end{equation*}
-получим следующее соотношений дл€ $g(t_0)$:
+введем в рассмотрение вектор $g(t_0)$:
 \begin{equation*}
-    g(t_0) = g - HF(t_f, t_0)x_0.
+    g(t_0) = - F(t_f, t_0)x_0.
 \end{equation*}
 
 »сходна€ заадача в классе дискретных управл€ющих воздействий будет иметь вид:
 \begin{equation*}
     \begin{aligned}
-        & \sum_{s \in T_h} c_h(s)u(s) \to \min,\\
-        & \sum_{s \in T_h} d_h(s)u(s) = g(t_0), \\
+        & \sum_{s \in T_h} h(u_1(s) + u_2(s)) \to \min,\\
+        & \sum_{s \in T_h} d_h(s)(u_1(s) - u_2(s)) = g(t_0), \\
         & u_{*} \le u(s) \le u^{*}, \ s \in T_h.\\
     \end{aligned}
 \end{equation*}
