@@ -83,7 +83,7 @@ A\\
 A^2\\
 \vdots\\
 A^N
-\end{bmatrix}, \ 
+\end{bmatrix}, \
 \Gamma = \begin{bmatrix}
     B & 0 & \vdots & 0 \\
     AB & B & \vdots & 0 \\
@@ -251,48 +251,49 @@ $$
 $$
 тогда $|u(t)| = u_1(t) + u_2(t)$, где $0 \le u_1(t) \le 1, \ 0 \le u_2(t) \le 1.$
 
-Таким образом, в классе дискретных оптимальных управлений получаем:
+Таким образом, в классе дискретных оптимальных управлений получаем криерий качества:
 $$
-    \int_{\tau}^{t_f}u_1(t) + u_2(t)dt = \sum_{s \in T_h(\tau)}h(u_1(s) + u_2(s)) \to \min
+    \int_{\tau}^{t_f}u_1(t) + u_2(t)dt = \sum_{s \in T_h(\tau)}h(u_1(s) + u_2(s)) \to \min.
 $$
-В результате преобразования мы привели задачу (\ref{3-2-1}) к следующему виду:
+
+Тогда в результате проделанных преобразований привели задачу (\ref{3-2-1}) к следующему виду:
 \begin{equation*} \label{3-2-2}
     \begin{aligned}
         & \sum_{s \in T_h(\tau)}h(u_1(s) + u_2(s)) \to \min,\\
-        & \dot{x} = Ax + Bu_1 - Bu_2,  \ x(\tau) = z, \\
-        & x(t_f) = 0, \\ 
+        & \dot{x} = Ax + bu_1 - bu_2,   \\
+        &  x(\tau) = z, \ \ x(t_f) = 0, \\
         & 0\le u_1(s)\le L, \ 0\le u_1(s)\le L, \  s\in T_h(\tau).
     \end{aligned}
 \end{equation*}
 
-Задачу в классе дискретных управляющих воздействий можно свести к дискретной задаче оптимального управления. Для этого по формуле Коши запишем соотношение:
+Далее, задачу в классе дискретных управляющих воздействий можно свести к дискретной задаче оптимального управления. Для этого по формуле Коши запишем соотношение:
 \begin{equation*}
     \begin{aligned}
-        & x(s+h) = F(s+h, s)x(s) + \int_s^{s+h}F(s+h, \theta)b(\theta)(u_1(\theta) - u_2(\theta))d \theta =\\ & F(s + h, s)x(s) + \int_s^{s+h}F(s+h, \theta)b(\theta)d \theta (u_1(s) - u_2(s))
+        & x(s+h) = F(s+h, s)x(s) + \int_s^{s+h}F(s+h, \theta)b(\theta)(u_1(\theta) - u_2(\theta))d \theta =\\ & F(s + h, s)x(s) + \int_s^{s+h}F(s+h, \theta)b(\theta)d \theta (u_1(s) - u_2(s)).
     \end{aligned}
 \end{equation*}
-Введем обозначения
+Введем обозначения:
 $$
-    A_h = F(s + h, s)
+    A_h(s) = F(s + h, s),
 $$
 $$
-    B_h = \int_{s}^{s+h}F(s+h, \theta)b(\theta)d\theta
+    B_h(s) = \int_{s}^{s+h}F(s+h, \theta)b(\theta)d\theta.
 $$
 
 В результате $x(s + h)$ будет представлен в следующем виде:
 $$
-    x(s +h) = A_h(s)x(s) + B_h(s) (u_1(s) - u_2(s)),\ s = \overline{k, tf-h}
+    x(s +h) = A_h(s)x(s) + B_h(s) (u_1(s) - u_2(s)),\ s = \overline{k, tf-h}.
 $$
 
-Таким образом мы получаем, что исходня задача (\ref{3-2-1}) эквивалентна следующей задаче оптимального управления дискретной системы:
-\begin{equation*} \label{3-2-3}
+Таким образом,  получаем, что исходная задача (\ref{3-2-1}) эквивалентна следующей задаче оптимального управления дискретной системой:
+\begin{equation} \label{3-2-3}
     \begin{aligned}
         & \sum_{s \in T_h(\tau)} h(u_1(s) + u_2(s)) \to \min,\\
         &  x(s +h) = A_h(s)x(s) + B_h(s) (u_1(s) - u_2(s)),\ s = \overline{k, tf-h},\\
         & x(\tau) = z, \ x(t_f) = 0,\\
-        & 0 \le u_1(s) \le 1, \ 0 \le u_2(s) \le 1,\ s = \overline{k, tf-h}
+        & 0 \le u_1(s) \le 1, \ 0 \le u_2(s) \le 1,\ s = \overline{k, tf-h}.
     \end{aligned}
-\end{equation*}
+\end{equation}
 
 % Вектор неизвестных: $(x, u1, u2)$
 
@@ -323,7 +324,7 @@ $$
         1
     \end{bmatrix},
 $$
-где размерности векторов $x = (N+1-k)n$ и $u = 2r(N - k)$.
+где размерности векторов $x$ --- $(N+1-k)n$ и $u$  --- $2r(N - k)$.
 
 Матрицы $b$ и $A$ имеют следующий вид:
 $$
@@ -332,7 +333,7 @@ $$
         0\\
         \cdots\\
         0
-    \end{bmatrix}
+    \end{bmatrix},
 $$
 $$
     A = \begin{bmatrix}
@@ -341,54 +342,71 @@ $$
         -A_h(\tau) & E_{n \times n} & \cdots & 0_{n \times n} & -B_h(\tau) \cdots 0_{n \times r} & B_h(\tau) \cdots 0_{n \times r}\\
         \cdots\\
         0_{n \times n} & 0_{n \times n} & .. -A_h(t_f - h) & E_{n \times n} & .. -B_h(t_f-h) & .. B_h(t_f-h)
-    \end{bmatrix}
+    \end{bmatrix},
 $$
 где $n(2 + N - k)$ --- количество строк, $(N + 1 - k)n + 2r(N -k)$ --- количество столбцов.
 
+Задача (\ref{3-2-3}) является также и задачей линейного программирования, переменными оптимизации являются $x$ и $u$, параметром --- $z\in \mathbb{R}^n$.
 
+Число переменных оптимизации в задаче линейного программирования можно сократить, выразив траекторию через управление. Получаемая задача носит название функциональной формы.
+
+Запишем по формуле Коши терминальное состояние:
 \begin{equation*}
-    x(t_f) = F(t_f, t_0)x_0 + \int_{t_0}^{t_f}F(t_f, \theta)b(\theta)(u_1(\theta) - u_2(\theta))d\theta.
+    x(t_f) = F(t_f, t_0)x_0 + \int_{t_0}^{t_f}F(t_f, \theta)b(u_1(\theta) - u_2(\theta))d\theta.
 \end{equation*}
-
-В силу дискретности управляющего воздействия, интеграл на промежутке $T = [t_0, t_f]$ представим в виде суммы итегралов на промежутках $[s,s+h],\ s \in T_h$.
+В силу дискретности управляющего воздействия, интеграл на промежутке $T = [t_0, t_f]$ представим в виде суммы интегралов на промежутках $[s,s+h],\ s \in T_h$:
 \begin{equation*}
     \begin{aligned}
-        & x(t_f) = F(t_f, t_0)x_0 + \sum_{s=t_0}^{t_f-h} \int_{s}^{s+h}F(t_f, \theta)b(\theta)(u_1(\theta) - u_2(\theta))d\theta \\
-        & = F(t_f, t_0)x_0 + \sum_{s \in T_h}\int_{s}^{s+h}F(t_f, \theta)b(\theta)d\theta (u_1(s) - u_2(s)).
+        & x(t_f) = F(t_f, t_0)x_0 + \sum_{s=t_0}^{t_f-h} \int_{s}^{s+h}F(t_f, \theta)b(u_1(\theta) - u_2(\theta))d\theta \\
+        & = F(t_f, t_0)x_0 + \sum_{s \in T_h}\int_{s}^{s+h}F(t_f, \theta)b d\theta (u_1(s) - u_2(s)).
     \end{aligned}
 \end{equation*}
 
-Критерий качества будет иметь вид
+Теперь представим терминальные ограничения в виде:
 \begin{equation*}
-    \begin{aligned}
-        & \int_{t_0}^{t_f}u_1(\theta) + u_2(\theta)d\theta = \sum_{s \in T_h}h(u_1(s) + u_2(s))
-    \end{aligned}
+   x(t_f) = F(t_f, t_0)x_0 +  \sum_{s \in T_h}\int_{s}^{s+h} F(t_f, \theta)b \ d\theta (u_1(s) - u_2(s)) = 0.
 \end{equation*}
 
-Распишем терминальные ограничения в виде:
-
+Введем обозначение:
 \begin{equation*}
-   x(t_f) = F(t_f, t_0)x_0 +  \sum_{s \in T_h}\int_{s}^{s+h} F(t_f, \theta)b(\theta)d\theta (u_1(s) - u_2(s)),
+    d_h(s) = \int_{s}^{s+h} F(t_f, \theta)b \ d\theta,
 \end{equation*}
-Произведем замену
 \begin{equation*}
-    d_h(s) = \int_{s}^{s+h} F(t_f, \theta)b(\theta)d\theta,
-\end{equation*}
-примем
-\begin{equation*}
-    x(t_f) = 0,
-\end{equation*}
-введем в рассмотрение вектор $g(t_0)$:
-\begin{equation*}
-    g(t_0) = - F(t_f, t_0)x_0.
+    G(t_0) = - F(t_f, t_0), \ \ 
+    G(\tau) = - F(t_f, \tau).
 \end{equation*}
 
-Исходная заадача в классе дискретных управляющих воздействий будет иметь вид:
+Исходная задача в классе дискретных управляющих воздействий будет иметь вид:
 \begin{equation*}
     \begin{aligned}
         & \sum_{s \in T_h} h(u_1(s) + u_2(s)) \to \min,\\
-        & \sum_{s \in T_h} d_h(s)(u_1(s) - u_2(s)) = g(t_0), \\
-        & u_{*} \le u(s) \le u^{*}, \ s \in T_h.\\
+        & \sum_{s \in T_h} d_h(s)(u_1(s) - u_2(s)) = G(t_0)x_0, \\
+        & 0 \le u_i(s) \le L, \ i = 1, 2, \ \ s \in T_h,\\
     \end{aligned}
 \end{equation*}
-В результате мы получили функциональную форму задачи оптимального управления.
+а задача для позиции $(\tau,z)$:
+\begin{equation*}
+    \begin{aligned}
+        & \sum_{s \in T_h(\tau)} h(u_1(s) + u_2(s)) \to \min,\\
+        & \sum_{s \in T_h(\tau)} d_h(s)(u_1(s) - u_2(s)) = G(\tau)z, \\
+        & 0 \le u_i(s) \le L, \ i = 1, 2, \ s \in T_h(\tau).\\
+    \end{aligned}
+\end{equation*}
+Полученные задачи  --- функциональная форма задачи оптимального управления, при этом параметр был вынесен справа явно.
+
+Соответствующая задача, как задача mp-LP:
+\begin{equation*}
+    \begin{aligned}
+        & {\bf 1}^T U \to \min,\\
+        & DU = G(\tau)z, \\
+        & 0 \le U \le L{\bf 1},\\
+    \end{aligned}
+\end{equation*}
+где 
+$$  
+    D = [d_h(\tau)\ -d_h(\tau)\ \ldots \ d_h(t_f-h)\ -d_h(t_f-h)],
+     $$
+$$ 
+    U = [u_1(\tau)\ u_2(\tau)\ \ldots \ u_1(t_f-h)\ u_2(t_f-h)]^T,
+     $$
+${\bf 1}$ --- вектор из единиц соответствующей размерности.

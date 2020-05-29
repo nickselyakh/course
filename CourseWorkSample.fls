@@ -341,6 +341,9 @@ INPUT /Users/nikitaselyakh/Desktop/kursach/course/parametric-img-eps-converted-t
 INPUT /Users/nikitaselyakh/Desktop/kursach/course/parametric-img-eps-converted-to.pdf
 INPUT /Users/nikitaselyakh/Desktop/kursach/course/chapter3.tex
 INPUT /Users/nikitaselyakh/Desktop/kursach/course/chapter3.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /Users/nikitaselyakh/Desktop/kursach/course/chapter4.tex
 INPUT /Users/nikitaselyakh/Desktop/kursach/course/chapter4.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
@@ -395,6 +398,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
@@ -470,6 +476,7 @@ INPUT /Users/nikitaselyakh/Desktop/kursach/course/bibliography.tex
 INPUT /Users/nikitaselyakh/Desktop/kursach/course/bibliography.tex
 INPUT /Users/nikitaselyakh/Desktop/kursach/course/CourseWorkSample.aux
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
